@@ -37,15 +37,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login Admin</title>
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <h2>Panel de Administración</h2>
-    <form method="POST">
-        <input type="email" name="email" placeholder="Correo" required><br>
-        <input type="password" name="password" placeholder="Contraseña" required><br>
-        <button type="submit">Ingresar</button>
-    </form>
-    <p><?= $mensaje ?></p>
+    <div class="main-container">
+        <div class="logo-container">
+            <img src="../img/empresa.png" alt="Logo" style="width: 140px; height: auto;">
+        </div>
+        <div class="container">
+            <h2>Iniciar sesión</h2>
+            <form method="POST">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <?php if ($mensaje): ?>
+                <div class="mensaje"><?= $mensaje ?></div>
+            <?php endif; ?>
+        </div>
+    </div>
 </body>
 </html>

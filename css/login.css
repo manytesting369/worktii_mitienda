@@ -1,0 +1,120 @@
+body {
+    background: #CFF6FF;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+.logo-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    padding: 32px 30px 24px 30px;
+    text-align: center;
+    margin-top: 0;
+}
+h2 {
+    color: #222;
+    margin-bottom: 24px;
+    font-size: 2em;
+    font-weight: bold;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #222;
+    font-weight: 500;
+}
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 18px;
+    border: none;
+    border-bottom: 2px solid #222;
+    background: #eaf4ff;
+    font-size: 1em;
+    outline: none;
+    border-radius: 4px 4px 0 0;
+    transition: background 0.2s;
+}
+input[type="email"]:focus, input[type="password"]:focus {
+    background: #d4ecff;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #eab308;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(234,179,8,0.15);
+}
+button:hover {
+    background: #c89c00;
+}
+.mensaje {
+    color: #c00;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.footer {
+    text-align: center;
+    color: #b3e0ff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.footer span {
+    color: #eab308;
+    font-weight: bold;
+}
+.footer a {
+    color: #eab308;
+    text-decoration: underline;
+    font-weight: bold;
+}
+@media (max-width: 500px) {
+    .container {
+        max-width: 95vw;
+        padding: 20px 10px;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    button {
+        font-size: 1em;
+    }
+    .logo-container {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .footer {
+        font-size: 0.9em;
+    }
+    .main-container {
+        margin-top: 10px;
+    }
+}

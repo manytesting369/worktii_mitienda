@@ -40,7 +40,6 @@ $top5 = $pdo->query("
 <head>
     <meta charset="UTF-8">
     <title>Panel Admin - Catálogo Web</title>
-    <link rel="stylesheet" href="../css/admin.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="../css/dashboard.css">
     <style>
@@ -60,8 +59,6 @@ $top5 = $pdo->query("
     <a href="dashboard.php">📊 Dashboard</a>
     <a href="dashboard.php?vista=productos">📦 Productos</a>
     <a href="dashboard.php?vista=categorias">📁 Categorías</a>
-    <a href="dashboard.php?vista=tallas">📏 Tallas</a>
-    <a href="dashboard.php?vista=colores">🎨 Colores</a>
     <a href="dashboard.php?vista=promociones">🎯 Promociones</a>
     <a href="dashboard.php?vista=configuracion">⚙️ Configuración</a>
     <a href="#">👥 Usuarios</a>
@@ -83,9 +80,6 @@ switch ($vista) {
     case 'producto_editar': include 'vistas/productos_editar.php'; break;
     case 'categorias': include 'vistas/categorias.php'; break;
     case 'editar_categoria': include 'vistas/editar_categoria.php'; break;
-    case 'tallas': include 'vistas/tallas.php'; break;
-    case 'editar_talla': include 'vistas/editar_talla.php'; break;
-    case 'colores': include 'vistas/colores.php'; break;
     case 'configuracion': include 'vistas/configuracion.php'; break;
     case 'promociones': include 'vistas/promociones.php'; break;
     case 'promociones_nuevo': include 'vistas/promociones_nuevo.php'; break;
