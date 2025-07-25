@@ -49,12 +49,15 @@ $categorias = $pdo->query("SELECT * FROM categorias ORDER BY nombre")->fetchAll(
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($categorias as $cat): ?>
+                <?php 
+                $contador = 1;
+                foreach ($categorias as $cat): ?>
                     <tr>
-                        <td style="padding:6px;"><?= $cat['id'] ?></td>
+                        <td style="padding:6px;"><?= $contador++ ?></td>
                         <td><?= htmlspecialchars($cat['nombre']) ?></td>
                         <td>
-                            <a href="dashboard.php?vista=editar_categoria&id=<?= $cat['id'] ?>">✏️ Editar</a>
+                            <a href="dashboard.php?vista=categoria/editar_categoria&id=<?= $cat['id'] ?>">✏️ Editar</a>
+
                             <?php
                             $stmt = $pdo->prepare("SELECT COUNT(*) FROM productos WHERE categoria_id = ?");
                             $stmt->execute([$cat['id']]);
@@ -68,3 +71,4 @@ $categorias = $pdo->query("SELECT * FROM categorias ORDER BY nombre")->fetchAll(
         </table>
     <?php endif; ?>
 </div>
+

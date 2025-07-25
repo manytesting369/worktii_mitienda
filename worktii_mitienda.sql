@@ -84,12 +84,16 @@ CREATE TABLE `productos` (
   CONSTRAINT `fk_productos_categoria` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+drop table productos;
+
 -- Tabla: imagenes_producto
 CREATE TABLE `imagenes_producto` (
   `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `producto_id` INT(11) DEFAULT NULL,
+  `precio` DECIMAL(10,2) NOT NULL,
   `ruta` VARCHAR(255) DEFAULT NULL,
   `descripcion` VARCHAR(255) DEFAULT NULL,
+  `stock` INT(11) DEFAULT 0,
   KEY `producto_id` (`producto_id`),
   CONSTRAINT `fk_imagenes_producto_producto` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

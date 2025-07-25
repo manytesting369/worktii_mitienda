@@ -1,11 +1,33 @@
 <?php
 session_start();
-require_once '../config/conexion.php';
+
+require_once __DIR__ . '/../config/conexion.php';
 
 // Verificar login
 if (!isset($_SESSION['usuario_id'])) {
     header('Location: login.php');
     exit;
+}
+
+// Cargar vista
+if (isset($_GET['vista'])) {
+    $vista = $_GET['vista'];
+    
+    // Evitar rutas con '../' para mayor seguridad
+    if (strpos($vista, '..') !== false) {
+        echo "<p>Ruta inválida.</p>";
+        exit;
+    }
+
+    $ruta = __DIR__ . "/vistas/{$vista}.php";
+
+    if (file_exists($ruta)) {
+        include $ruta;
+    } else {
+        echo "<p>Vista no encontrada.</p>";
+    }
+} else {
+    echo "<p>Bienvenido al dashboard.</p>";
 }
 
 $nombre = $_SESSION['usuario_nombre'] ?? 'Usuario';
