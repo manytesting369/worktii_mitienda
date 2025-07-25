@@ -75,16 +75,10 @@ $top5 = $pdo->query("
 $vista = $_GET['vista'] ?? 'inicio';
 
 switch ($vista) {
-    case 'productos': include 'vistas/productos_listado.php'; break;
-    case 'producto_nuevo': include 'vistas/productos_nuevo.php'; break;
-    case 'producto_editar': include 'vistas/productos_editar.php'; break;
-    case 'categorias': include 'vistas/categorias.php'; break;
-    case 'editar_categoria': include 'vistas/editar_categoria.php'; break;
+    case 'productos': include 'vistas/producto/productos_listado.php'; break;
+    case 'categorias': include 'vistas/categoria/categorias.php'; break;
+    case 'promociones': include 'vistas/promocion/promociones.php'; break;
     case 'configuracion': include 'vistas/configuracion.php'; break;
-    case 'promociones': include 'vistas/promociones.php'; break;
-    case 'promociones_nuevo': include 'vistas/promociones_nuevo.php'; break;
-    case 'promociones_editar': include 'vistas/promociones_editar.php'; break;
-    case 'promociones_eliminar': include 'vistas/promociones_eliminar.php'; break;
     default:
         echo '<div class="card"><h1>📊 Bienvenido al panel de administración</h1><p>Desde aquí puedes gestionar todos los módulos del sistema.</p></div>';
         echo '<div class="tarjetas">

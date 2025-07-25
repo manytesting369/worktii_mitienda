@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/../../config/conexion.php';
 
-
 // Obtener promociones con nombre de producto
 $stmt = $pdo->query("
     SELECT pr.*, p.nombre AS producto 
@@ -9,8 +8,11 @@ $stmt = $pdo->query("
     JOIN productos p ON pr.producto_id = p.id 
     ORDER BY pr.fecha_inicio DESC
 ");
+
+
 $promociones = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 
 <div class="card">
     <h2>🎉 Promociones</h2>
