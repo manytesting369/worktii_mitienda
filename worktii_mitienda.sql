@@ -78,11 +78,14 @@ CREATE TABLE `productos` (
   `precio` DECIMAL(10,2) NOT NULL,
   `categoria_id` INT(11) DEFAULT NULL,
   `estado_activo` TINYINT(1) DEFAULT 1,
+  'stock' BIGINT NOT NULL;
   `redes` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`redes`)),
   `visitas` INT(11) DEFAULT 0,
   KEY `categoria_id` (`categoria_id`),
   CONSTRAINT `fk_productos_categoria` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
 
 drop table productos;
 

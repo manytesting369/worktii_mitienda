@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nueva_categoria'])) {
     }
 }
 
+
 // Eliminar categoría si no está en uso
 if (isset($_GET['eliminar'])) {
     $id = $_GET['eliminar'];
@@ -24,6 +25,7 @@ if (isset($_GET['eliminar'])) {
     header("Location: dashboard.php?vista=categorias");
     exit;
 }
+
 
 // Listado de categorías
 $categorias = $pdo->query("SELECT * FROM categorias ORDER BY nombre")->fetchAll();

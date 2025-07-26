@@ -1,15 +1,9 @@
 <?php
-
-require __DIR__ . '/../vendor/autoload.php'; // Adjust path if composer's vendor is not directly in root
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..'); // Adjust path to your project root where .env is located
-$dotenv->load();
-
-$host = $_ENV['DB_HOST'];
-$db = $_ENV['DB_NAME'];
-$user = $_ENV['DB_USER'];
-$pass = $_ENV['DB_PASSWORD'];
-$charset = $_ENV['DB_CHARSET'];
+$host = 'localhost';
+$db = 'worktii_mitienda2';
+$user = 'admi';
+$pass = 'admi';
+$charset = 'utf8mb4';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=$charset", $user, $pass);

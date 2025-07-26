@@ -1,9 +1,9 @@
 <?php
 $categorias = $pdo->query("SELECT * FROM categorias ORDER BY nombre")->fetchAll();
-$tallas = $pdo->query("SELECT * FROM tallas ORDER BY nombre")->fetchAll();
-$colores = $pdo->query("SELECT * FROM colores ORDER BY nombre")->fetchAll();
+
 
 $mensaje = '';
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = trim($_POST['nombre'] ?? '');
@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $precio = floatval($_POST['precio'] ?? 0);
     $categoria_id = $_POST['categoria_id'] ?? '';
     $estado_activo = isset($_POST['estado_activo']) ? 1 : 0;
+    $stock = intval($_POST['stock'] ?? 0); // Nuevo campo
 
     // Validaciones
     $errores = [];
@@ -18,35 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($precio <= 0) $errores[] = "precio";
     if ($categoria_id === '') $errores[] = "categoría";
     if (empty($_FILES['imagenes']['name'][0])) $errores[] = "imagen";
-    if (!isset($_POST['talla'][0], $_POST['color'][0], $_POST['stock'][0]) || $_POST['talla'][0] === '' || $_POST['color'][0] === '' || $_POST['stock'][0] === '') {
-        $errores[] = "variante";
-    }
+    if ($stock < 0) $errores[] = "stock";
 
     if (count($errores) > 0) {
         $mensaje = "Faltan los siguientes datos obligatorios: " . implode(", ", $errores) . ".";
     } else {
-        // Insertar producto
-        $stmt = $pdo->prepare("INSERT INTO productos (nombre, descripcion, precio, categoria_id, estado_activo) 
-                               VALUES (?, ?, ?, ?, ?)");
-        $stmt->execute([$nombre, $descripcion, $precio, $categoria_id, $estado_activo]);
+        // Insertar producto con stock
+        $stmt = $pdo->prepare("INSERT INTO productos (nombre, descripcion, precio, categoria_id, estado_activo, stock) 
+                               VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->execute([$nombre, $descripcion, $precio, $categoria_id, $estado_activo, $stock]);
         $producto_id = $pdo->lastInsertId();
-
-        // Guardar variantes
-        $tallas_post = $_POST['talla'];
-        $colores_post = $_POST['color'];
-        $stocks_post = $_POST['stock'];
-
-        for ($i = 0; $i < count($tallas_post); $i++) {
-            $t = $tallas_post[$i];
-            $c = $colores_post[$i];
-            $s = $stocks_post[$i];
-
-            if ($t && $c && is_numeric($s)) {
-                $insert = $pdo->prepare("INSERT INTO producto_tallas_colores (producto_id, talla_id, color_id, stock) 
-                                         VALUES (?, ?, ?, ?)");
-                $insert->execute([$producto_id, $t, $c, $s]);
-            }
-        }
 
         // Guardar imágenes convertidas a .webp
         $imagenes = $_FILES['imagenes'];
@@ -104,7 +86,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
+
+
 ?>
+
 
 <div class="card">
     <h2>➕ Agregar nuevo producto</h2>
@@ -128,11 +113,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <option value="<?= $cat['id'] ?>"><?= htmlspecialchars($cat['nombre']) ?></option>
             <?php endforeach; ?>
         </select><br><br>
-        <label><input type="checkbox" name="estado_activo" checked> Activar producto</label><br><br>
 
-        <h3>🧩 Variantes: Talla + Color + Stock</h3>
-        <div id="variantes"></div>
-        <button type="button" onclick="agregarFila()">➕ Añadir variante</button><br><br>
+        <label>Stock *</label><br>
+        <input type="number" name="stock" min="0" required style="width: 100%;"><br><br>
+
+        <label><input type="checkbox" name="estado_activo" checked> Activar producto</label><br><br>
 
         <label>Imágenes del producto (máx. 10):</label><br>
         <input type="file" name="imagenes[]" multiple accept=".jpg,.jpeg,.png,.webp"><br>
@@ -143,51 +128,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </div>
 
-<script>
-const tallas = <?= json_encode($tallas) ?>;
-const colores = <?= json_encode($colores) ?>;
-
-function agregarFila() {
-    const div = document.createElement('div');
-    div.style.marginBottom = '10px';
-
-    const selectTalla = document.createElement('select');
-    selectTalla.name = 'talla[]';
-    selectTalla.required = true;
-    tallas.forEach(t => {
-        const opt = document.createElement('option');
-        opt.value = t.id;
-        opt.text = t.nombre;
-        selectTalla.appendChild(opt);
-    });
-
-    const selectColor = document.createElement('select');
-    selectColor.name = 'color[]';
-    selectColor.required = true;
-    colores.forEach(c => {
-        const opt = document.createElement('option');
-        opt.value = c.id;
-        opt.text = c.nombre;
-        selectColor.appendChild(opt);
-    });
-
-    const inputStock = document.createElement('input');
-    inputStock.name = 'stock[]';
-    inputStock.type = 'number';
-    inputStock.min = 0;
-    inputStock.placeholder = 'Stock';
-    inputStock.required = true;
-    inputStock.style.width = '80px';
-    inputStock.style.marginLeft = '10px';
-
-    div.appendChild(selectTalla);
-    div.appendChild(selectColor);
-    div.appendChild(inputStock);
-
-    document.getElementById('variantes').appendChild(div);
-}
-
-window.onload = () => {
-    agregarFila();
-};
-</script>
+?>

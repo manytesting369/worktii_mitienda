@@ -1,16 +1,14 @@
 <?php
 $productos = $pdo->query("
-    SELECT p.*, 
-    COALESCE(SUM(ptc.stock), 0) AS stock_total
-    FROM productos p
-    LEFT JOIN producto_tallas_colores ptc ON ptc.producto_id = p.id
-    GROUP BY p.id
+    SELECT * FROM productos
 ")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
+
+
 <div class="card">
     <h2>📦 Lista de Productos</h2>
-    <a href="dashboard.php?vista=producto_nuevo" style="color:green; font-weight:bold;">➕ Agregar nuevo producto</a><br><br>
+    <a href="dashboard.php?vista=productos_nuevo" style="color:green; font-weight:bold;">➕ Agregar nuevo producto</a><br><br>
 
     <table style="width:100%; border-collapse: collapse; font-family: sans-serif;">
         <thead>
@@ -39,8 +37,8 @@ $productos = $pdo->query("
                             <?= $producto['estado_activo'] ? '<span style="color:green;">✅ Activo</span>' : '<span style="color:red;">❌ Inactivo</span>' ?>
                         </td>
                         <td style="padding:10px;">
-                            <a href="dashboard.php?vista=producto_editar&id=<?= $producto['id'] ?>" title="Editar" style="margin-right: 10px;">✏️</a>
-                            <a href="dashboard.php?vista=producto_eliminar&id=<?= $producto['id'] ?>" title="Eliminar" onclick="return confirm('¿Eliminar este producto?');">🗑️</a>
+                            <a href="dashboard.php?vista=producto/productos_editar&id=<?= $producto['id'] ?>" title="Editar" style="margin-right: 10px;">✏️</a>
+                            <a href="dashboard.php?vista=producto/productos_eliminar&id=<?= $producto['id'] ?>" title="Eliminar" onclick="return confirm('¿Eliminar este producto?');">🗑️</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
