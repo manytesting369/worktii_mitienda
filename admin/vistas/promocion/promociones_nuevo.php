@@ -1,5 +1,4 @@
 <?php
-require_once __DIR__ . '/../../config/conexion.php';
 
 // Obtener productos activos para el select
 $stmt = $pdo->query("SELECT id, nombre FROM productos WHERE estado_activo = 1 ORDER BY nombre ASC");
@@ -11,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $titulo = $_POST['titulo'];
     $descripcion = $_POST['descripcion'];
     $tipo = $_POST['tipo'];
-    $valor = $_POST['valor'] ?? null;
+    $valor = isset($_POST['valor']) && $_POST['valor'] !== '' ? $_POST['valor'] : null;
     $fecha_inicio = $_POST['fecha_inicio'];
     $fecha_fin = $_POST['fecha_fin'];
     $estado = $_POST['estado'];
@@ -21,9 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$producto_id, $titulo, $descripcion, $tipo, $valor, $fecha_inicio, $fecha_fin, $estado]);
 
-    header("Location: dashboard.php?vista=promociones");
+    header("Location: dashboard.php?vista=promocion/promociones");
     exit;
 }
+
+
 ?>
 
 <div class="card">

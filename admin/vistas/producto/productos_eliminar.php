@@ -1,31 +1,31 @@
 <?php
-require_once '../config/conexion.php';
 
-if (!isset($_GET['id']) || !isset($_GET['producto'])) {
-    die('Parámetros incompletos.');
+if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+    echo "<script>alert('ID inválido'); location.href = 'dashboard.php?vista=producto/productos_';</script>";
+    exit;
 }
 
-$id_imagen = $_GET['id'];
-$id_producto = $_GET['producto'];
+$id_producto = (int) $_GET['id'];
 
-// Obtener la ruta del archivo
-$stmt = $pdo->prepare("SELECT ruta FROM imagenes_producto WHERE id = ?");
-$stmt->execute([$id_imagen]);
-$imagen = $stmt->fetch(PDO::FETCH_ASSOC);
+// 1. Buscar imágenes asociadas al producto
+$stmt = $pdo->prepare("SELECT ruta FROM imagenes_producto WHERE producto_id = ?");
+$stmt->execute([$id_producto]);
+$imagenes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-if ($imagen) {
-    $ruta_fisica = '../../' . $imagen['ruta'];
-
-    // Eliminar archivo físico si existe
+// 2. Eliminar archivos físicos
+foreach ($imagenes as $img) {
+    $ruta_fisica = '../../' . $img['ruta'];
     if (file_exists($ruta_fisica)) {
         unlink($ruta_fisica);
     }
-
-    // Eliminar de la base de datos
-    $del = $pdo->prepare("DELETE FROM imagenes_producto WHERE id = ?");
-    $del->execute([$id_imagen]);
 }
 
-header("Location: dashboard.php?vista=producto_editar&id=" . $id_producto);
+// 3. Eliminar producto (ON DELETE CASCADE se encarga del resto)
+$del = $pdo->prepare("DELETE FROM productos WHERE id = ?");
+$del->execute([$id_producto]);
+
+// 4. Redireccionar
+echo "<script>location.href = 'dashboard.php?vista=producto/productos';</script>";
+
 exit;
-?>
+

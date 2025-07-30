@@ -43,11 +43,13 @@ $rutaVista = __DIR__ . "/vistas/{$vistaPermitida}.php";
 
 <div class="main">
 <?php
+
     if (file_exists($rutaVista)) {
         include $rutaVista;
     } else {
         echo "<p>⚠️ Vista no encontrada.</p>";
     }
+
 ?>
 </div>
 

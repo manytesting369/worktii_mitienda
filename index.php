@@ -58,6 +58,9 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             document.getElementById('formFiltros').submit();
         }
     </script>
+    <!-- Añade esta línea si usas la fuente Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --color-primario: <?= $colorPrimario ?>;

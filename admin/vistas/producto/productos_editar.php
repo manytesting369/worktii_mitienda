@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        header("Location: dashboard.php?vista=productos");
+        header("Location: dashboard.php?vista=producto/productos");
         exit;
     } else {
         echo "<p style='color:red;'>Faltan datos obligatorios.</p>";
@@ -110,6 +110,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit">💾 Guardar cambios</button>
         &nbsp;
-        <a href="dashboard.php?vista=productos">🔙 Volver</a>
+        <a href="dashboard.php?vista=producto/productos">🔙 Volver</a>
     </form>
 </div>

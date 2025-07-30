@@ -27,7 +27,7 @@ header {
     gap: 10px;
 }
 
-.header-left img { height: 30px; }
+.header-left img { height: 50px; width: 150px;}
 .header-left h1 { font-size: 20px; margin: 0; }
 
 .redes {

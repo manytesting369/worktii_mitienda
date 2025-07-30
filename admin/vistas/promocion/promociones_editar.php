@@ -1,5 +1,4 @@
 <?php
-require_once __DIR__ . '/../../config/conexion.php';
 
 if (!isset($_GET['id'])) {
     echo "<p>ID no especificado.</p>";
@@ -80,6 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit">💾 Guardar cambios</button>
         &nbsp;
-        <a href="dashboard.php?vista=promociones">🔙 Volver</a>
+        <a href="dashboard.php?vista=promocion/promociones">🔙 Volver</a>
     </form>
 </div>

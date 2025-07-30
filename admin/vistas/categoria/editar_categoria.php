@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($nuevo_nombre !== '') {
         $update = $pdo->prepare("UPDATE categorias SET nombre = ? WHERE id = ?");
         $update->execute([$nuevo_nombre, $id]);
-        header("Location: dashboard.php?vista=categorias");
+        header("Location: dashboard.php?vista=categoria/categorias");
         exit;
     } else {
         echo "<p style='color:red;'>El nombre no puede estar vacío.</p>";
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         >💾 Guardar cambios</button>
         &nbsp;
         <a 
-            href="dashboard.php?vista=categorias" 
+            href="dashboard.php?vista=categoria/categorias" 
             style="padding: 10px 20px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;"
         >🔙 Volver</a>
     </form>

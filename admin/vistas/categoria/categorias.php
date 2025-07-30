@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nueva_categoria'])) {
     if ($nueva !== '') {
         $stmt = $pdo->prepare("INSERT INTO categorias (nombre) VALUES (?)");
         $stmt->execute([$nueva]);
-        header("Location: dashboard.php?vista=categorias");
+        header("Location: dashboard.php?vista=categoria/categorias");
         exit;
     }
 }
@@ -22,7 +22,7 @@ if (isset($_GET['eliminar'])) {
         $del = $pdo->prepare("DELETE FROM categorias WHERE id = ?");
         $del->execute([$id]);
     }
-    header("Location: dashboard.php?vista=categorias");
+    header("Location: dashboard.php?vista=categoria/categorias");
     exit;
 }
 
@@ -64,7 +64,7 @@ $categorias = $pdo->query("SELECT * FROM categorias ORDER BY nombre")->fetchAll(
                             $stmt = $pdo->prepare("SELECT COUNT(*) FROM productos WHERE categoria_id = ?");
                             $stmt->execute([$cat['id']]);
                             if ($stmt->fetchColumn() == 0): ?>
-                                &nbsp; <a href="dashboard.php?vista=categorias&eliminar=<?= $cat['id'] ?>" onclick="return confirm('¿Eliminar esta categoría?')">🗑️ Eliminar</a>
+                                &nbsp; <a href="dashboard.php?vista=categoria/categorias&eliminar=<?= $cat['id'] ?>" onclick="return confirm('¿Eliminar esta categoría?')">🗑️ Eliminar</a>
                             <?php endif; ?>
                         </td>
                     </tr>

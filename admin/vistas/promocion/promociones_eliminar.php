@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../../config/conexion.php';
-
 // Validar ID
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     echo "<div class='alerta error'>ID no válido.</div>";
@@ -25,6 +23,6 @@ $delete = $pdo->prepare("DELETE FROM promociones WHERE id = ?");
 $delete->execute([$id]);
 
 // Redireccionar a la lista de promociones
-echo "<script>location.href = 'dashboard.php?vista=promociones';</script>";
+echo "<script>location.href = 'dashboard.php?vista=promocion/promociones';</script>";
 exit;
 ?>

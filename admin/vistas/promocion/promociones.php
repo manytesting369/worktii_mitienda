@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__ . '/../../config/conexion.php';
-
 // Obtener promociones con nombre de producto
 $stmt = $pdo->query("
     SELECT pr.*, p.nombre AS producto 
@@ -16,7 +14,7 @@ $promociones = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="card">
     <h2>🎉 Promociones</h2>
-    <a href="dashboard.php?vista=promociones_nuevo" class="btn-agregar">➕ Nueva promoción</a>
+    <a href="dashboard.php?vista=promocion/promociones_nuevo" class="btn-agregar">➕ Nueva promoción</a>
 
     <table>
         <thead>
@@ -30,6 +28,8 @@ $promociones = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <th>Acciones</th>
             </tr>
         </thead>
+
+
         <tbody>
             <?php foreach ($promociones as $promo): ?>
                 <tr>
@@ -48,9 +48,9 @@ $promociones = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         </span>
                     </td>
                     <td>
-                        <a href="dashboard.php?vista=promociones_editar&id=<?= $promo['id'] ?>">✏️ Editar</a>
+                        <a href="dashboard.php?vista=promocion/promociones_editar&id=<?= $promo['id'] ?>">✏️ Editar</a>
                         |
-                        <a href="dashboard.php?vista=promociones_eliminar&id=<?= $promo['id'] ?>" onclick="return confirm('¿Eliminar esta promoción?')">🗑️ Eliminar</a>
+                        <a href="dashboard.php?vista=promocion/promociones_eliminar&id=<?= $promo['id'] ?>" onclick="return confirm('¿Eliminar esta promoción?')">🗑️ Eliminar</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

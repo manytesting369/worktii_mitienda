@@ -8,7 +8,7 @@ $productos = $pdo->query("
 
 <div class="card">
     <h2>📦 Lista de Productos</h2>
-    <a href="dashboard.php?vista=productos_nuevo" style="color:green; font-weight:bold;">➕ Agregar nuevo producto</a><br><br>
+    <a href="dashboard.php?vista=producto/productos_nuevo" style="color:green; font-weight:bold;">➕ Agregar nuevo producto</a><br><br>
 
     <table style="width:100%; border-collapse: collapse; font-family: sans-serif;">
         <thead>
@@ -36,9 +36,11 @@ $productos = $pdo->query("
                         <td style="padding:10px;">
                             <?= $producto['estado_activo'] ? '<span style="color:green;">✅ Activo</span>' : '<span style="color:red;">❌ Inactivo</span>' ?>
                         </td>
+
                         <td style="padding:10px;">
                             <a href="dashboard.php?vista=producto/productos_editar&id=<?= $producto['id'] ?>" title="Editar" style="margin-right: 10px;">✏️</a>
                             <a href="dashboard.php?vista=producto/productos_eliminar&id=<?= $producto['id'] ?>" title="Eliminar" onclick="return confirm('¿Eliminar este producto?');">🗑️</a>
+                            
                         </td>
                     </tr>
                 <?php endforeach; ?>
