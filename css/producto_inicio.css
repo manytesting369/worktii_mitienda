@@ -1,5 +1,5 @@
 :root {
-    --color-primario: #007bff; /* Este será sobrescrito desde PHP con inline style */
+    --color-primario: #007bff;
 }
 
 * {
@@ -12,28 +12,43 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #f5f5f5;
 }
-
 header {
-    background: var(--color-primario);
-    color: #fff;
-    padding: 12px 20px;
+    background-color: var(--color-primario);
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header img {
-    height: 40px;
+    padding: 10px 20px;
+    gap: 10px;
+    flex-wrap: wrap; /* ← CAMBIADO: permite adaptarse */
 }
 
 .btn-volver {
-    background: #fff;
+    background: white;
     color: var(--color-primario);
     padding: 6px 12px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+    white-space: nowrap;
+    margin-left: auto; /* ← asegura que se mantenga a la derecha */
 }
+
+
+
+
+.logo_header img {
+    height: 50px;
+    width: auto;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
 
 .container {
     max-width: 1000px;
@@ -47,6 +62,7 @@ header img {
 .galeria {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -55,6 +71,8 @@ header img {
     max-width: 480px;
     border-radius: 10px;
     overflow: hidden;
+    flex: 1;
+    min-width: 280px;
 }
 
 .swiper-slide img {
@@ -66,7 +84,7 @@ header img {
 
 .info {
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
 }
 
 .info h2 {
@@ -78,33 +96,59 @@ header img {
     margin-bottom: 12px;
 }
 
-.precio {
+.precios {
+    margin: 10px 0 15px;
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.precio-promocion,
+.precio-unico {
     color: #e74c3c;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 12px;
 }
 
-.btn-wsp,
-.btn-video {
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
+.stock {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .btn-wsp {
-    background: #25D366;
-    color: #fff;
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.btn-video {
-    background: var(--color-primario);
-    color: #fff;
-    margin-left: 10px;
+.btn-wsp:hover {
+    background-color: #1ebe5b;
+    transform: scale(1.03);
 }
+
+.stock {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+    background: #eef2f3;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
 
 .promo {
     margin-top: 15px;
@@ -187,7 +231,15 @@ header img {
     object-fit: contain;
 }
 
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
     .galeria {
         flex-direction: column;
         align-items: center;
@@ -196,7 +248,14 @@ header img {
     .info {
         text-align: center;
     }
+
+    .btn-wsp,
+
+    .promo {
+        text-align: center;
+    }
 }
+
 
 footer {
     margin-top: 40px;

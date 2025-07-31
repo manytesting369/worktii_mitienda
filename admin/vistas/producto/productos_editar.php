@@ -67,7 +67,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "<p style='color:red;'>Faltan datos obligatorios.</p>";
     }
 }
+
 ?>
+<!-- Html de productos -->
 
 <div class="card">
     <h2>✏️ Editar Producto</h2>

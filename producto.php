@@ -54,6 +54,7 @@ $promoStmt = $pdo->prepare("
 $promoStmt->execute([$id]);
 $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -74,15 +75,17 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
 <body>
 
     <header>
-        <div>
-            <?php if ($logo): ?>
-                <img src="<?= htmlspecialchars($logo) ?>" alt="Logo">
-            <?php else: ?>
-                <strong><?= htmlspecialchars($nombreTienda) ?></strong>
-            <?php endif; ?>
+        <div class="logo_header">
+            <a href="/inicio" class="header-left">
+                <?php if ($logo): ?>
+                    <img src="<?= htmlspecialchars($logo) ?>" alt="Logo">
+                <?php endif; ?>
+            </a>
         </div>
         <a href="index.php" class="btn-volver">← Volver</a>
     </header>
+
+
 
     <div class="container">
         <div class="galeria">
@@ -101,7 +104,32 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
             <div class="info">
                 <h2><?= htmlspecialchars($producto['nombre']) ?></h2>
                 <p><?= nl2br(htmlspecialchars($producto['descripcion'])) ?></p>
-                <div class="precio">S/. <?= number_format($producto['precio'], 2) ?></div>
+                <?php
+                $precioOriginal = $producto['precio'];
+                $precioFinal = $precioOriginal;
+
+                if ($promo && $promo['estado'] === 'activo') {
+                    if ($promo['tipo'] === 'porcentaje') {
+                        $descuento = $precioOriginal * ($promo['valor'] / 100);
+                        $precioFinal = $precioOriginal - $descuento;
+                    } elseif ($promo['tipo'] === 'fijo') {
+                        $precioFinal = $precioOriginal - $promo['valor'];
+                    }
+                }
+                ?>
+
+                <div class="precios">
+                    <?php if ($promo && $promo['estado'] === 'activo'): ?>
+                        <div class="precio-original">S/. <?= number_format($precioOriginal, 2) ?></div>
+                        <div class="precio-promocion">S/. <?= number_format($precioFinal, 2) ?></div>
+                    <?php else: ?>
+                        <div class="precio-unico">S/. <?= number_format($precioOriginal, 2) ?></div>
+                    <?php endif; ?>
+                </div>
+                <div class="stock">
+                    Stock disponible: <?= intval($producto['stock']) ?> unidades
+                </div>
+
 
                 <!-- Botón WhatsApp con enlace al producto -->
                 <?php if ($whatsapp): ?>
@@ -112,14 +140,6 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
                     </a>
                 <?php endif; ?>
 
-                <!-- Botón Video -->
-                <?php if (!empty($producto['video_url'])): ?>
-                    <a class="btn-video"
-                        href="<?= htmlspecialchars($producto['video_url']) ?>"
-                        target="_blank">
-                        Ver video del producto
-                    </a>
-                <?php endif; ?>
 
                 <!-- Promo -->
                 <?php if ($promo):
@@ -207,5 +227,5 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
     </script>
 
 </body>
-
+ 
 </html>
