@@ -71,23 +71,23 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </style>
 
 </head>
-    <header>
-        <div class="logo_header">
-            <a href="index.php" class="header-left">
-                <?php if ($logo): ?>
-                    <img src="<?= htmlspecialchars($logo) ?>" alt="Logo">
-                <?php endif; ?>
-            </a>
-        </div>
-        <div class="nombre_header">
-            <a href="index.php" class="header-right">
-                <h1><?= htmlspecialchars($nombreTienda) ?></h1>
-            </a>
-        </div>
-    </header>
-
-    <body>
-    <!-- Banner visual superior -->
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="logo_header">
+                <a href="index.php" class="header-left">
+                    <?php if ($logo): ?>
+                        <img src="<?= htmlspecialchars($logo) ?>" alt="Logo">
+                    <?php endif; ?>
+                </a>
+            </div>
+            <div class="nombre_header">
+                <a href="index.php" class="header-right">
+                    <h1><?= htmlspecialchars($nombreTienda) ?></h1>
+                </a>
+            </div>
+        </header>
+        <!-- Banner visual superior -->
         <!-- Sección de tienda con logo y redes -->
         <div class="store-section">
             <p class="store-description">
@@ -118,8 +118,6 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <!-- Puedes agregar otros iconos como YouTube, web, etc., si tienes los datos -->
             </div>
         </div>
-
-
         <div class="contenedor">
             <div class="titulo">Catálogo de productos</div>
 
@@ -168,9 +166,12 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php endforeach; ?>
             </div>
         </div>
-    </body>
-    <footer>
-        &copy; <?= date('Y') ?> Catálogo Web. Todos los derechos reservados.
-    </footer>
+        <footer>
+            &copy; <?= date('Y') ?> Catálogo Web. Todos los derechos reservados.
+        </footer>
+    </div>
+    
+</body>
+    
 
 </html>
