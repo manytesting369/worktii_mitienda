@@ -1,3 +1,4 @@
+
 :root {
     --color-primario: #007bff;
 }
@@ -265,3 +266,25 @@ footer {
     padding: 15px;
     font-size: 14px;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper > footer {
+    margin-top: auto;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #888;
+}
+

@@ -32,7 +32,7 @@ $productos = $pdo->query("
                         <td style="padding:10px;"><?= $index + 1 ?></td>
                         <td style="padding:10px;"><?= htmlspecialchars($producto['nombre']) ?></td>
                         <td style="padding:10px;">S/. <?= number_format($producto['precio'], 2) ?></td>
-                        <td style="padding:10px;"><?= $producto['stock_total'] ?></td>
+                        <td style="padding:10px;"><?= number_format($producto['stock']) ?></td>
                         <td style="padding:10px;">
                             <?= $producto['estado_activo'] ? '<span style="color:green;">✅ Activo</span>' : '<span style="color:red;">❌ Inactivo</span>' ?>
                         </td>

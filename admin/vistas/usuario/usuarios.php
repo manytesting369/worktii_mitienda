@@ -31,7 +31,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <tbody>
             <?php foreach ($usuarios as $i => $usuario): ?>
                 <tr>
-                    <td><?= $index +1 ?></td> 
+                    <td><?= number_format($i +1) ?></td> 
                     <td><?= htmlspecialchars($usuario['nombre']) ?></td>
                     <td><?= htmlspecialchars($usuario['email']) ?></td>
                     <td><?= ucfirst($usuario['rol']) ?></td>

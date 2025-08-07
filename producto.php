@@ -73,8 +73,8 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-
-    <header>
+    <div class="page-wrapper">
+        <header>
         <div class="logo_header">
             <a href="/inicio" class="header-left">
                 <?php if ($logo): ?>
@@ -225,6 +225,7 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
             document.getElementById('zoomModal').classList.remove('active');
         }
     </script>
+    </div>
 
 </body>
  
