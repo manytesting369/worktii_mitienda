@@ -67,8 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         elseif ($ext === 'png') $img = @imagecreatefrompng($tmp);
                         elseif ($ext === 'webp') $img = @imagecreatefromwebp($tmp);
 
-                        if ($img !== null) {
-                            // Nombre del archivo
+                        if ($img !== false && $img !== null) {
                             $filename = $nombreProducto . ($i > 0 ? " $i" : '') . '.webp';
                             $ruta_fisica = "$carpetaCategoria/$filename";
                             $ruta_guardada = "img/$categoriaLimpia/$filename";
@@ -78,6 +77,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 $stmt = $pdo->prepare("INSERT INTO imagenes_producto (producto_id, ruta) VALUES (?, ?)");
                                 $stmt->execute([$producto_id, $ruta_guardada]);
                             }
+                        } else {
+                            // Imagen inválida, puedes mostrar mensaje o ignorar
+                            error_log("No se pudo procesar la imagen: $originalName");
                         }
                     }
                 }

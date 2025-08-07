@@ -3,7 +3,6 @@ session_start();
 require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/auth.php';
 
-
 // Configuraciones globales
 $config = $pdo->query("SELECT * FROM configuracion LIMIT 1")->fetch(PDO::FETCH_ASSOC);
 $colorPrimario = $config['color_primario'] ?? '#3498db';
@@ -18,6 +17,7 @@ $rol = $_SESSION['rol'] ?? 'editor';
 $vista = $_GET['vista'] ?? 'dashboard_home';
 $vistaPermitida = preg_match('/^[a-zA-Z0-9_\/]+$/', $vista) ? $vista : 'dashboard_home';
 $rutaVista = __DIR__ . "/vistas/{$vistaPermitida}.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

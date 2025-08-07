@@ -4,13 +4,12 @@ require_once 'config/conexion.php';
 // Configuración general
 $config = $pdo->query("SELECT * FROM configuracion LIMIT 1")->fetch(PDO::FETCH_ASSOC);
 $logo = $config['logo'] ?? '';
-$nombreTienda = 'SGD PRODUCTOS';
+$nombreTienda = 'System G Worktiim';
 $colorPrimario = $config['color_primario'] ?? '#111';
 $whatsapp = $config['whatsapp_defecto'];
 $facebook = $config['link_facebook'] ?? '';
 $instagram = $config['link_instagram'] ?? '';
 $tiktok = $config['link_tiktok'] ?? '';
-
 $logoBg = $colorPrimario;
 
 // Filtros
@@ -29,6 +28,14 @@ $sql = "
     WHERE estado_activo = 1
 ";
 
+$stmt = $pdo->query("
+    SELECT id, nombre, email
+    FROM usuarios
+
+");
+
+// Obtener primer usuario (ejemplo)
+$usuario = $pdo->query("SELECT nombre, email FROM usuarios LIMIT 1")->fetch(PDO::FETCH_ASSOC);
 
 $params = [];
 
@@ -90,8 +97,18 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- Banner visual superior -->
         <!-- Sección de tienda con logo y redes -->
         <div class="store-section">
-            <p class="store-description">
+            <div>
+
+                <p class="store-description">
                 Venta de productos de importación, tecnología y oficinas
+                </p>
+                <?php if ($usuario): ?>
+                    <div class="usuario-info">
+                        <p><strong>Atención por:</strong> <?= htmlspecialchars($usuario['nombre']) ?></p>
+                        <p><strong>Correo:</strong> <a href="mailto:<?= htmlspecialchars($usuario['email']) ?>"><?= htmlspecialchars($usuario['email']) ?></a></p>
+                    </div>
+                <?php endif; ?>
+            </div>
             
             <!-- Redes sociales -->
             <div class="social-icons-main">
@@ -172,6 +189,4 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
     
 </body>
-    
-
 </html>
