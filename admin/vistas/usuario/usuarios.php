@@ -1,5 +1,5 @@
 <?php
-// Obtener usuarioses con nombre de producto
+// 
 $stmt = $pdo->query("
     SELECT u.id, u.nombre, u.email, r.nombre AS rol, u.fecha_creacion 
     FROM usuarios u

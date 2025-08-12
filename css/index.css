@@ -78,11 +78,21 @@ header {
 }
 
 
-/* --- Sección tienda --- */
+
+/* --- Sección tienda corregidita --- */
 .store-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
     background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 15px; 
 }
 
 .store-logo-wrapper {
@@ -94,6 +104,207 @@ header {
     color: #666;
 }
 
+/* --- ESTILOS DE LA TARJETA DE PRESENTACIÓN (card-presentacion) --- */
+
+.card-presentacion-container {
+    width: 100%;
+    max-width: 500px; /* Igual que store-section */
+    margin: 0 auto; 
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.card-presentacion-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(243, 237, 229);
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto; /* Centro horizontal */
+    padding: 40px 20px;
+    background-color: #0e1628;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Efecto de fondo */
+.card-presentacion-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(20, 30, 50, 0.7), rgba(0, 0, 0, 0.9));
+    z-index: -1;
+}
+
+/* Secciones de la tarjeta */
+.card-presentacion-header {
+    margin-bottom: 25px;
+}
+
+.card-presentacion-nombre p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+}
+
+.card-presentacion-puesto p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    opacity: 0.8;
+    margin: 0;
+}
+/* Imagen de empresa (logo) */
+.card-presentacion-profile-bussiness {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-presentacion-profile-bussiness img {
+    max-width: 200px; /* Ajusta el tamaño máximo */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.card-presentacion-profile-section {
+    margin-bottom: 30px;
+}
+
+.card-presentacion-profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(211, 58, 58, 0.699);
+}
+
+.card-presentacion-qr-code {
+    margin-bottom: 30px;
+}
+
+.card-presentacion-qr-code img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Sección de contactos */
+.card-presentacion-contactos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-presentacion-contact-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #1a233b;
+    border-radius: 50px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-presentacion-contact-item .card-presentacion-icon {
+    font-size: 1.2em;
+    margin-right: 15px;
+    line-height: 1;
+}
+
+.card-presentacion-contact-item p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-presentacion-contact-item a {
+    text-decoration: none;
+    color: #1a233b;
+    font-weight: 700;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive para pantallas más pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    .store-section,
+    .card-presentacion-container {
+        padding: 15px; /* Reduce el padding para pantallas muy pequeñas */
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+
+    .card-presentacion-main {
+        padding: 30px 15px; /* Reduce el padding interno de la tarjeta */
+    }
+
+    .card-presentacion-nombre p {
+        font-size: 1.8em; /* Ajusta el tamaño de la fuente del nombre */
+    }
+
+    .card-presentacion-puesto p {
+        font-size: 1em; /* Ajusta el tamaño de la fuente del puesto */
+    }
+    
+}
+.btn-qr {
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(53, 122, 189, 0.6);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+}
+
+.btn-qr:hover {
+    background: linear-gradient(135deg, #357abd, #285f9c);
+    box-shadow: 0 8px 16px rgba(40, 95, 156, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn-qr:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(53, 122, 189, 0.5);
+}
+
+.btn-qr:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+
 /* --- Redes sociales --- */
 .social-icons-main {
     margin-top: 15px;
@@ -104,8 +315,8 @@ header {
 }
 
 .social-icons-main img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     transition: transform 0.2s;
 }
 
@@ -275,4 +486,6 @@ html, body {
     font-size: 0.9em;
     color: #888;
 }
+
+
 

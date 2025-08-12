@@ -5,7 +5,10 @@ $mensaje = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = trim($_POST['nombre'] ?? '');
     $descripcion = trim($_POST['descripcion'] ?? '');
-    $precio = floatval($_POST['precio'] ?? 0);
+    $precio = isset($_POST['precio']) && is_numeric($_POST['precio']) ? floatval($_POST['precio']) : null;
+    if ($precio === null || $precio <= 0) {
+        $errores[] = "precio";
+    }
     $categoria_id = $_POST['categoria_id'] ?? '';
     $estado_activo = isset($_POST['estado_activo']) ? 1 : 0;
     $stock = intval($_POST['stock'] ?? 0);
@@ -13,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errores = [];
 
     if ($nombre === '') $errores[] = "nombre";
-    if ($precio <= 0) $errores[] = "precio";
     if ($categoria_id === '') $errores[] = "categoría";
     if (empty($_FILES['imagenes']['name'][0])) $errores[] = "imagen";
     if ($stock < 0) $errores[] = "stock";
@@ -35,23 +37,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute([$nombre, $descripcion, $precio, $categoria_id, $estado_activo, $stock]);
             $producto_id = $pdo->lastInsertId();
 
-
             // Procesar imágenes
             $imagenes = $_FILES['imagenes'];
             $total = count($imagenes['name']);
-            $permitidos = ['jpg', 'jpeg', 'png', 'webp'];
+            $permitidos = ['jpg', 'jpeg', 'png', 'webp', 'gif', 'bmp'];
 
+            // Límite de imágenes
             if ($total > 10) {
                 $mensaje = "❌ Solo se permiten hasta 10 imágenes por producto.";
             } else {
                 // Limpiar nombre del producto y categoría
                 $nombreProducto = preg_replace('/[^a-z0-9_-]/i', '_', strtolower($nombre));
-                $categoriaLimpia = isset($_POST['categoria']) ? preg_replace('/[^a-z0-9_-]/i', '_', strtolower($_POST['categoria'])) : 'otros';
+                $categoriaLimpia = isset($_POST['categoria']) 
+                    ? preg_replace('/[^a-z0-9_-]/i', '_', strtolower($_POST['categoria'])) 
+                    : 'otros';
 
-                // Ruta a la carpeta en la raíz del proyecto
+                // Carpeta de destino
                 $carpetaCategoria = dirname(__DIR__, 3) . "/img/$categoriaLimpia";
-
-                // Crear carpeta si no existe
                 if (!is_dir($carpetaCategoria)) {
                     mkdir($carpetaCategoria, 0755, true);
                 }
@@ -61,26 +63,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $originalName = basename($imagenes['name'][$i]);
                     $ext = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
 
-                    if (in_array($ext, $permitidos)) {
-                        $img = null;
-                        if ($ext === 'jpg' || $ext === 'jpeg') $img = @imagecreatefromjpeg($tmp);
-                        elseif ($ext === 'png') $img = @imagecreatefrompng($tmp);
-                        elseif ($ext === 'webp') $img = @imagecreatefromwebp($tmp);
+                    // Validar extensión
+                    if (!in_array($ext, $permitidos)) {
+                        error_log("Formato no permitido: $originalName");
+                        continue; // Saltar y seguir con la siguiente
+                    }
 
-                        if ($img !== false && $img !== null) {
-                            $filename = $nombreProducto . ($i > 0 ? " $i" : '') . '.webp';
-                            $ruta_fisica = "$carpetaCategoria/$filename";
-                            $ruta_guardada = "img/$categoriaLimpia/$filename";
+                    // Crear imagen desde archivo (soporte extendido)
+                    $imgData = file_get_contents($tmp);
+                    if ($imgData === false) {
+                        error_log("No se pudo leer la imagen: $originalName");
+                        continue;
+                    }
 
-                            if (imagewebp($img, $ruta_fisica, 80)) {
-                                imagedestroy($img);
-                                $stmt = $pdo->prepare("INSERT INTO imagenes_producto (producto_id, ruta) VALUES (?, ?)");
-                                $stmt->execute([$producto_id, $ruta_guardada]);
-                            }
-                        } else {
-                            // Imagen inválida, puedes mostrar mensaje o ignorar
-                            error_log("No se pudo procesar la imagen: $originalName");
-                        }
+                    $img = @imagecreatefromstring($imgData);
+                    if ($img === false) {
+                        error_log("No se pudo procesar la imagen: $originalName");
+                        continue;
+                    }
+
+                    // Nombre final
+                    $filename = $nombreProducto . ($i > 0 ? "_$i" : '') . '.webp';
+                    $ruta_fisica = "$carpetaCategoria/$filename";
+                    $ruta_guardada = "img/$categoriaLimpia/$filename";
+
+                    // Convertir a WebP y guardar
+                    if (imagewebp($img, $ruta_fisica, 80)) {
+                        imagedestroy($img);
+                        $stmt = $pdo->prepare("INSERT INTO imagenes_producto (producto_id, ruta) VALUES (?, ?)");
+                        $stmt->execute([$producto_id, $ruta_guardada]);
+                    } else {
+                        error_log("Error al convertir a WebP: $originalName");
+                        imagedestroy($img);
                     }
                 }
 

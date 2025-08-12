@@ -1,1738 +1,1738 @@
 [
   {
-    "nameES": "Afganistán",
+    "pais": "Afganistán",
     "nameEN": "Afghanistan",
-    "iso2": "AF",
+    "pronombre": "AF",
     "iso3": "AFG",
-    "phoneCode": "93"
+    "prefijo": "93"
   },
   {
-    "nameES": "Albania",
+    "pais": "Albania",
     "nameEN": "Albania",
-    "iso2": "AL",
+    "pronombre": "AL",
     "iso3": "ALB",
-    "phoneCode": "355"
+    "prefijo": "355"
   },
   {
-    "nameES": "Alemania",
+    "pais": "Alemania",
     "nameEN": "Germany",
-    "iso2": "DE",
+    "pronombre": "DE",
     "iso3": "DEU",
-    "phoneCode": "49"
+    "prefijo": "49"
   },
   {
-    "nameES": "Andorra",
+    "pais": "Andorra",
     "nameEN": "Andorra",
-    "iso2": "AD",
+    "pronombre": "AD",
     "iso3": "AND",
-    "phoneCode": "376"
+    "prefijo": "376"
   },
   {
-    "nameES": "Angola",
+    "pais": "Angola",
     "nameEN": "Angola",
-    "iso2": "AO",
+    "pronombre": "AO",
     "iso3": "AGO",
-    "phoneCode": "244"
+    "prefijo": "244"
   },
   {
-    "nameES": "Anguila",
+    "pais": "Anguila",
     "nameEN": "Anguilla",
-    "iso2": "AI",
+    "pronombre": "AI",
     "iso3": "AIA",
-    "phoneCode": "1 264"
+    "prefijo": "1 264"
   },
   {
-    "nameES": "Antártida",
+    "pais": "Antártida",
     "nameEN": "Antarctica",
-    "iso2": "AQ",
+    "pronombre": "AQ",
     "iso3": "ATA",
-    "phoneCode": "672"
+    "prefijo": "672"
   },
   {
-    "nameES": "Antigua y Barbuda",
+    "pais": "Antigua y Barbuda",
     "nameEN": "Antigua and Barbuda",
-    "iso2": "AG",
+    "pronombre": "AG",
     "iso3": "ATG",
-    "phoneCode": "1 268"
+    "prefijo": "1 268"
   },
   {
-    "nameES": "Arabia Saudita",
+    "pais": "Arabia Saudita",
     "nameEN": "Saudi Arabia",
-    "iso2": "SA",
+    "pronombre": "SA",
     "iso3": "SAU",
-    "phoneCode": "966"
+    "prefijo": "966"
   },
   {
-    "nameES": "Argelia",
+    "pais": "Argelia",
     "nameEN": "Algeria",
-    "iso2": "DZ",
+    "pronombre": "DZ",
     "iso3": "DZA",
-    "phoneCode": "213"
+    "prefijo": "213"
   },
   {
-    "nameES": "Argentina",
+    "pais": "Argentina",
     "nameEN": "Argentina",
-    "iso2": "AR",
+    "pronombre": "AR",
     "iso3": "ARG",
-    "phoneCode": "54"
+    "prefijo": "54"
   },
   {
-    "nameES": "Armenia",
+    "pais": "Armenia",
     "nameEN": "Armenia",
-    "iso2": "AM",
+    "pronombre": "AM",
     "iso3": "ARM",
-    "phoneCode": "374"
+    "prefijo": "374"
   },
   {
-    "nameES": "Aruba",
+    "pais": "Aruba",
     "nameEN": "Aruba",
-    "iso2": "AW",
+    "pronombre": "AW",
     "iso3": "ABW",
-    "phoneCode": "297"
+    "prefijo": "297"
   },
   {
-    "nameES": "Australia",
+    "pais": "Australia",
     "nameEN": "Australia",
-    "iso2": "AU",
+    "pronombre": "AU",
     "iso3": "AUS",
-    "phoneCode": "61"
+    "prefijo": "61"
   },
   {
-    "nameES": "Austria",
+    "pais": "Austria",
     "nameEN": "Austria",
-    "iso2": "AT",
+    "pronombre": "AT",
     "iso3": "AUT",
-    "phoneCode": "43"
+    "prefijo": "43"
   },
   {
-    "nameES": "Azerbaiyán",
+    "pais": "Azerbaiyán",
     "nameEN": "Azerbaijan",
-    "iso2": "AZ",
+    "pronombre": "AZ",
     "iso3": "AZE",
-    "phoneCode": "994"
+    "prefijo": "994"
   },
   {
-    "nameES": "Bélgica",
+    "pais": "Bélgica",
     "nameEN": "Belgium",
-    "iso2": "BE",
+    "pronombre": "BE",
     "iso3": "BEL",
-    "phoneCode": "32"
+    "prefijo": "32"
   },
   {
-    "nameES": "Bahamas",
+    "pais": "Bahamas",
     "nameEN": "Bahamas",
-    "iso2": "BS",
+    "pronombre": "BS",
     "iso3": "BHS",
-    "phoneCode": "1 242"
+    "prefijo": "1 242"
   },
   {
-    "nameES": "Bahrein",
+    "pais": "Bahrein",
     "nameEN": "Bahrain",
-    "iso2": "BH",
+    "pronombre": "BH",
     "iso3": "BHR",
-    "phoneCode": "973"
+    "prefijo": "973"
   },
   {
-    "nameES": "Bangladesh",
+    "pais": "Bangladesh",
     "nameEN": "Bangladesh",
-    "iso2": "BD",
+    "pronombre": "BD",
     "iso3": "BGD",
-    "phoneCode": "880"
+    "prefijo": "880"
   },
   {
-    "nameES": "Barbados",
+    "pais": "Barbados",
     "nameEN": "Barbados",
-    "iso2": "BB",
+    "pronombre": "BB",
     "iso3": "BRB",
-    "phoneCode": "1 246"
+    "prefijo": "1 246"
   },
   {
-    "nameES": "Belice",
+    "pais": "Belice",
     "nameEN": "Belize",
-    "iso2": "BZ",
+    "pronombre": "BZ",
     "iso3": "BLZ",
-    "phoneCode": "501"
+    "prefijo": "501"
   },
   {
-    "nameES": "Benín",
+    "pais": "Benín",
     "nameEN": "Benin",
-    "iso2": "BJ",
+    "pronombre": "BJ",
     "iso3": "BEN",
-    "phoneCode": "229"
+    "prefijo": "229"
   },
   {
-    "nameES": "Bhután",
+    "pais": "Bhután",
     "nameEN": "Bhutan",
-    "iso2": "BT",
+    "pronombre": "BT",
     "iso3": "BTN",
-    "phoneCode": "975"
+    "prefijo": "975"
   },
   {
-    "nameES": "Bielorrusia",
+    "pais": "Bielorrusia",
     "nameEN": "Belarus",
-    "iso2": "BY",
+    "pronombre": "BY",
     "iso3": "BLR",
-    "phoneCode": "375"
+    "prefijo": "375"
   },
   {
-    "nameES": "Birmania",
+    "pais": "Birmania",
     "nameEN": "Myanmar",
-    "iso2": "MM",
+    "pronombre": "MM",
     "iso3": "MMR",
-    "phoneCode": "95"
+    "prefijo": "95"
   },
   {
-    "nameES": "Bolivia",
+    "pais": "Bolivia",
     "nameEN": "Bolivia",
-    "iso2": "BO",
+    "pronombre": "BO",
     "iso3": "BOL",
-    "phoneCode": "591"
+    "prefijo": "591"
   },
   {
-    "nameES": "Bosnia y Herzegovina",
+    "pais": "Bosnia y Herzegovina",
     "nameEN": "Bosnia and Herzegovina",
-    "iso2": "BA",
+    "pronombre": "BA",
     "iso3": "BIH",
-    "phoneCode": "387"
+    "prefijo": "387"
   },
   {
-    "nameES": "Botsuana",
+    "pais": "Botsuana",
     "nameEN": "Botswana",
-    "iso2": "BW",
+    "pronombre": "BW",
     "iso3": "BWA",
-    "phoneCode": "267"
+    "prefijo": "267"
   },
   {
-    "nameES": "Brasil",
+    "pais": "Brasil",
     "nameEN": "Brazil",
-    "iso2": "BR",
+    "pronombre": "BR",
     "iso3": "BRA",
-    "phoneCode": "55"
+    "prefijo": "55"
   },
   {
-    "nameES": "Brunéi",
+    "pais": "Brunéi",
     "nameEN": "Brunei",
-    "iso2": "BN",
+    "pronombre": "BN",
     "iso3": "BRN",
-    "phoneCode": "673"
+    "prefijo": "673"
   },
   {
-    "nameES": "Bulgaria",
+    "pais": "Bulgaria",
     "nameEN": "Bulgaria",
-    "iso2": "BG",
+    "pronombre": "BG",
     "iso3": "BGR",
-    "phoneCode": "359"
+    "prefijo": "359"
   },
   {
-    "nameES": "Burkina Faso",
+    "pais": "Burkina Faso",
     "nameEN": "Burkina Faso",
-    "iso2": "BF",
+    "pronombre": "BF",
     "iso3": "BFA",
-    "phoneCode": "226"
+    "prefijo": "226"
   },
   {
-    "nameES": "Burundi",
+    "pais": "Burundi",
     "nameEN": "Burundi",
-    "iso2": "BI",
+    "pronombre": "BI",
     "iso3": "BDI",
-    "phoneCode": "257"
+    "prefijo": "257"
   },
   {
-    "nameES": "Cabo Verde",
+    "pais": "Cabo Verde",
     "nameEN": "Cape Verde",
-    "iso2": "CV",
+    "pronombre": "CV",
     "iso3": "CPV",
-    "phoneCode": "238"
+    "prefijo": "238"
   },
   {
-    "nameES": "Camboya",
+    "pais": "Camboya",
     "nameEN": "Cambodia",
-    "iso2": "KH",
+    "pronombre": "KH",
     "iso3": "KHM",
-    "phoneCode": "855"
+    "prefijo": "855"
   },
   {
-    "nameES": "Camerún",
+    "pais": "Camerún",
     "nameEN": "Cameroon",
-    "iso2": "CM",
+    "pronombre": "CM",
     "iso3": "CMR",
-    "phoneCode": "237"
+    "prefijo": "237"
   },
   {
-    "nameES": "Canadá",
+    "pais": "Canadá",
     "nameEN": "Canada",
-    "iso2": "CA",
+    "pronombre": "CA",
     "iso3": "CAN",
-    "phoneCode": "1"
+    "prefijo": "1"
   },
   {
-    "nameES": "Chad",
+    "pais": "Chad",
     "nameEN": "Chad",
-    "iso2": "TD",
+    "pronombre": "TD",
     "iso3": "TCD",
-    "phoneCode": "235"
+    "prefijo": "235"
   },
   {
-    "nameES": "Chile",
+    "pais": "Chile",
     "nameEN": "Chile",
-    "iso2": "CL",
+    "pronombre": "CL",
     "iso3": "CHL",
-    "phoneCode": "56"
+    "prefijo": "56"
   },
   {
-    "nameES": "China",
+    "pais": "China",
     "nameEN": "China",
-    "iso2": "CN",
+    "pronombre": "CN",
     "iso3": "CHN",
-    "phoneCode": "86"
+    "prefijo": "86"
   },
   {
-    "nameES": "Chipre",
+    "pais": "Chipre",
     "nameEN": "Cyprus",
-    "iso2": "CY",
+    "pronombre": "CY",
     "iso3": "CYP",
-    "phoneCode": "357"
+    "prefijo": "357"
   },
   {
-    "nameES": "Ciudad del Vaticano",
+    "pais": "Ciudad del Vaticano",
     "nameEN": "Vatican City State",
-    "iso2": "VA",
+    "pronombre": "VA",
     "iso3": "VAT",
-    "phoneCode": "39"
+    "prefijo": "39"
   },
   {
-    "nameES": "Colombia",
+    "pais": "Colombia",
     "nameEN": "Colombia",
-    "iso2": "CO",
+    "pronombre": "CO",
     "iso3": "COL",
-    "phoneCode": "57"
+    "prefijo": "57"
   },
   {
-    "nameES": "Comoras",
+    "pais": "Comoras",
     "nameEN": "Comoros",
-    "iso2": "KM",
+    "pronombre": "KM",
     "iso3": "COM",
-    "phoneCode": "269"
+    "prefijo": "269"
   },
   {
-    "nameES": "República del Congo",
+    "pais": "República del Congo",
     "nameEN": "Republic of the Congo",
-    "iso2": "CG",
+    "pronombre": "CG",
     "iso3": "COG",
-    "phoneCode": "242"
+    "prefijo": "242"
   },
   {
-    "nameES": "República Democrática del Congo",
+    "pais": "República Democrática del Congo",
     "nameEN": "Democratic Republic of the Congo",
-    "iso2": "CD",
+    "pronombre": "CD",
     "iso3": "COD",
-    "phoneCode": "243"
+    "prefijo": "243"
   },
   {
-    "nameES": "Corea del Norte",
+    "pais": "Corea del Norte",
     "nameEN": "North Korea",
-    "iso2": "KP",
+    "pronombre": "KP",
     "iso3": "PRK",
-    "phoneCode": "850"
+    "prefijo": "850"
   },
   {
-    "nameES": "Corea del Sur",
+    "pais": "Corea del Sur",
     "nameEN": "South Korea",
-    "iso2": "KR",
+    "pronombre": "KR",
     "iso3": "KOR",
-    "phoneCode": "82"
+    "prefijo": "82"
   },
   {
-    "nameES": "Costa de Marfil",
+    "pais": "Costa de Marfil",
     "nameEN": "Ivory Coast",
-    "iso2": "CI",
+    "pronombre": "CI",
     "iso3": "CIV",
-    "phoneCode": "225"
+    "prefijo": "225"
   },
   {
-    "nameES": "Costa Rica",
+    "pais": "Costa Rica",
     "nameEN": "Costa Rica",
-    "iso2": "CR",
+    "pronombre": "CR",
     "iso3": "CRI",
-    "phoneCode": "506"
+    "prefijo": "506"
   },
   {
-    "nameES": "Croacia",
+    "pais": "Croacia",
     "nameEN": "Croatia",
-    "iso2": "HR",
+    "pronombre": "HR",
     "iso3": "HRV",
-    "phoneCode": "385"
+    "prefijo": "385"
   },
   {
-    "nameES": "Cuba",
+    "pais": "Cuba",
     "nameEN": "Cuba",
-    "iso2": "CU",
+    "pronombre": "CU",
     "iso3": "CUB",
-    "phoneCode": "53"
+    "prefijo": "53"
   },
   {
-    "nameES": "Curazao",
+    "pais": "Curazao",
     "nameEN": "Curaçao",
-    "iso2": "CW",
+    "pronombre": "CW",
     "iso3": "CWU",
-    "phoneCode": "5999"
+    "prefijo": "5999"
   },
   {
-    "nameES": "Dinamarca",
+    "pais": "Dinamarca",
     "nameEN": "Denmark",
-    "iso2": "DK",
+    "pronombre": "DK",
     "iso3": "DNK",
-    "phoneCode": "45"
+    "prefijo": "45"
   },
   {
-    "nameES": "Dominica",
+    "pais": "Dominica",
     "nameEN": "Dominica",
-    "iso2": "DM",
+    "pronombre": "DM",
     "iso3": "DMA",
-    "phoneCode": "1 767"
+    "prefijo": "1 767"
   },
   {
-    "nameES": "Ecuador",
+    "pais": "Ecuador",
     "nameEN": "Ecuador",
-    "iso2": "EC",
+    "pronombre": "EC",
     "iso3": "ECU",
-    "phoneCode": "593"
+    "prefijo": "593"
   },
   {
-    "nameES": "Egipto",
+    "pais": "Egipto",
     "nameEN": "Egypt",
-    "iso2": "EG",
+    "pronombre": "EG",
     "iso3": "EGY",
-    "phoneCode": "20"
+    "prefijo": "20"
   },
   {
-    "nameES": "El Salvador",
+    "pais": "El Salvador",
     "nameEN": "El Salvador",
-    "iso2": "SV",
+    "pronombre": "SV",
     "iso3": "SLV",
-    "phoneCode": "503"
+    "prefijo": "503"
   },
   {
-    "nameES": "Emiratos Árabes Unidos",
+    "pais": "Emiratos Árabes Unidos",
     "nameEN": "United Arab Emirates",
-    "iso2": "AE",
+    "pronombre": "AE",
     "iso3": "ARE",
-    "phoneCode": "971"
+    "prefijo": "971"
   },
   {
-    "nameES": "Eritrea",
+    "pais": "Eritrea",
     "nameEN": "Eritrea",
-    "iso2": "ER",
+    "pronombre": "ER",
     "iso3": "ERI",
-    "phoneCode": "291"
+    "prefijo": "291"
   },
   {
-    "nameES": "Eslovaquia",
+    "pais": "Eslovaquia",
     "nameEN": "Slovakia",
-    "iso2": "SK",
+    "pronombre": "SK",
     "iso3": "SVK",
-    "phoneCode": "421"
+    "prefijo": "421"
   },
   {
-    "nameES": "Eslovenia",
+    "pais": "Eslovenia",
     "nameEN": "Slovenia",
-    "iso2": "SI",
+    "pronombre": "SI",
     "iso3": "SVN",
-    "phoneCode": "386"
+    "prefijo": "386"
   },
   {
-    "nameES": "España",
+    "pais": "España",
     "nameEN": "Spain",
-    "iso2": "ES",
+    "pronombre": "ES",
     "iso3": "ESP",
-    "phoneCode": "34"
+    "prefijo": "34"
   },
   {
-    "nameES": "Estados Unidos de América",
+    "pais": "Estados Unidos de América",
     "nameEN": "United States of America",
-    "iso2": "US",
+    "pronombre": "US",
     "iso3": "USA",
-    "phoneCode": "1"
+    "prefijo": "1"
   },
   {
-    "nameES": "Estonia",
+    "pais": "Estonia",
     "nameEN": "Estonia",
-    "iso2": "EE",
+    "pronombre": "EE",
     "iso3": "EST",
-    "phoneCode": "372"
+    "prefijo": "372"
   },
   {
-    "nameES": "Etiopía",
+    "pais": "Etiopía",
     "nameEN": "Ethiopia",
-    "iso2": "ET",
+    "pronombre": "ET",
     "iso3": "ETH",
-    "phoneCode": "251"
+    "prefijo": "251"
   },
   {
-    "nameES": "Filipinas",
+    "pais": "Filipinas",
     "nameEN": "Philippines",
-    "iso2": "PH",
+    "pronombre": "PH",
     "iso3": "PHL",
-    "phoneCode": "63"
+    "prefijo": "63"
   },
   {
-    "nameES": "Finlandia",
+    "pais": "Finlandia",
     "nameEN": "Finland",
-    "iso2": "FI",
+    "pronombre": "FI",
     "iso3": "FIN",
-    "phoneCode": "358"
+    "prefijo": "358"
   },
   {
-    "nameES": "Fiyi",
+    "pais": "Fiyi",
     "nameEN": "Fiji",
-    "iso2": "FJ",
+    "pronombre": "FJ",
     "iso3": "FJI",
-    "phoneCode": "679"
+    "prefijo": "679"
   },
   {
-    "nameES": "Francia",
+    "pais": "Francia",
     "nameEN": "France",
-    "iso2": "FR",
+    "pronombre": "FR",
     "iso3": "FRA",
-    "phoneCode": "33"
+    "prefijo": "33"
   },
   {
-    "nameES": "Gabón",
+    "pais": "Gabón",
     "nameEN": "Gabon",
-    "iso2": "GA",
+    "pronombre": "GA",
     "iso3": "GAB",
-    "phoneCode": "241"
+    "prefijo": "241"
   },
   {
-    "nameES": "Gambia",
+    "pais": "Gambia",
     "nameEN": "Gambia",
-    "iso2": "GM",
+    "pronombre": "GM",
     "iso3": "GMB",
-    "phoneCode": "220"
+    "prefijo": "220"
   },
   {
-    "nameES": "Georgia",
+    "pais": "Georgia",
     "nameEN": "Georgia",
-    "iso2": "GE",
+    "pronombre": "GE",
     "iso3": "GEO",
-    "phoneCode": "995"
+    "prefijo": "995"
   },
   {
-    "nameES": "Ghana",
+    "pais": "Ghana",
     "nameEN": "Ghana",
-    "iso2": "GH",
+    "pronombre": "GH",
     "iso3": "GHA",
-    "phoneCode": "233"
+    "prefijo": "233"
   },
   {
-    "nameES": "Gibraltar",
+    "pais": "Gibraltar",
     "nameEN": "Gibraltar",
-    "iso2": "GI",
+    "pronombre": "GI",
     "iso3": "GIB",
-    "phoneCode": "350"
+    "prefijo": "350"
   },
   {
-    "nameES": "Granada",
+    "pais": "Granada",
     "nameEN": "Grenada",
-    "iso2": "GD",
+    "pronombre": "GD",
     "iso3": "GRD",
-    "phoneCode": "1 473"
+    "prefijo": "1 473"
   },
   {
-    "nameES": "Grecia",
+    "pais": "Grecia",
     "nameEN": "Greece",
-    "iso2": "GR",
+    "pronombre": "GR",
     "iso3": "GRC",
-    "phoneCode": "30"
+    "prefijo": "30"
   },
   {
-    "nameES": "Groenlandia",
+    "pais": "Groenlandia",
     "nameEN": "Greenland",
-    "iso2": "GL",
+    "pronombre": "GL",
     "iso3": "GRL",
-    "phoneCode": "299"
+    "prefijo": "299"
   },
   {
-    "nameES": "Guadalupe",
+    "pais": "Guadalupe",
     "nameEN": "Guadeloupe",
-    "iso2": "GP",
+    "pronombre": "GP",
     "iso3": "GLP",
-    "phoneCode": "590"
+    "prefijo": "590"
   },
   {
-    "nameES": "Guam",
+    "pais": "Guam",
     "nameEN": "Guam",
-    "iso2": "GU",
+    "pronombre": "GU",
     "iso3": "GUM",
-    "phoneCode": "1 671"
+    "prefijo": "1 671"
   },
   {
-    "nameES": "Guatemala",
+    "pais": "Guatemala",
     "nameEN": "Guatemala",
-    "iso2": "GT",
+    "pronombre": "GT",
     "iso3": "GTM",
-    "phoneCode": "502"
+    "prefijo": "502"
   },
   {
-    "nameES": "Guayana Francesa",
+    "pais": "Guayana Francesa",
     "nameEN": "French Guiana",
-    "iso2": "GF",
+    "pronombre": "GF",
     "iso3": "GUF",
-    "phoneCode": "594"
+    "prefijo": "594"
   },
   {
-    "nameES": "Guernsey",
+    "pais": "Guernsey",
     "nameEN": "Guernsey",
-    "iso2": "GG",
+    "pronombre": "GG",
     "iso3": "GGY",
-    "phoneCode": "44"
+    "prefijo": "44"
   },
   {
-    "nameES": "Guinea",
+    "pais": "Guinea",
     "nameEN": "Guinea",
-    "iso2": "GN",
+    "pronombre": "GN",
     "iso3": "GIN",
-    "phoneCode": "224"
+    "prefijo": "224"
   },
   {
-    "nameES": "Guinea Ecuatorial",
+    "pais": "Guinea Ecuatorial",
     "nameEN": "Equatorial Guinea",
-    "iso2": "GQ",
+    "pronombre": "GQ",
     "iso3": "GNQ",
-    "phoneCode": "240"
+    "prefijo": "240"
   },
   {
-    "nameES": "Guinea-Bissau",
+    "pais": "Guinea-Bissau",
     "nameEN": "Guinea-Bissau",
-    "iso2": "GW",
+    "pronombre": "GW",
     "iso3": "GNB",
-    "phoneCode": "245"
+    "prefijo": "245"
   },
   {
-    "nameES": "Guyana",
+    "pais": "Guyana",
     "nameEN": "Guyana",
-    "iso2": "GY",
+    "pronombre": "GY",
     "iso3": "GUY",
-    "phoneCode": "592"
+    "prefijo": "592"
   },
   {
-    "nameES": "Haití",
+    "pais": "Haití",
     "nameEN": "Haiti",
-    "iso2": "HT",
+    "pronombre": "HT",
     "iso3": "HTI",
-    "phoneCode": "509"
+    "prefijo": "509"
   },
   {
-    "nameES": "Honduras",
+    "pais": "Honduras",
     "nameEN": "Honduras",
-    "iso2": "HN",
+    "pronombre": "HN",
     "iso3": "HND",
-    "phoneCode": "504"
+    "prefijo": "504"
   },
   {
-    "nameES": "Hong kong",
+    "pais": "Hong kong",
     "nameEN": "Hong Kong",
-    "iso2": "HK",
+    "pronombre": "HK",
     "iso3": "HKG",
-    "phoneCode": "852"
+    "prefijo": "852"
   },
   {
-    "nameES": "Hungría",
+    "pais": "Hungría",
     "nameEN": "Hungary",
-    "iso2": "HU",
+    "pronombre": "HU",
     "iso3": "HUN",
-    "phoneCode": "36"
+    "prefijo": "36"
   },
   {
-    "nameES": "India",
+    "pais": "India",
     "nameEN": "India",
-    "iso2": "IN",
+    "pronombre": "IN",
     "iso3": "IND",
-    "phoneCode": "91"
+    "prefijo": "91"
   },
   {
-    "nameES": "Indonesia",
+    "pais": "Indonesia",
     "nameEN": "Indonesia",
-    "iso2": "ID",
+    "pronombre": "ID",
     "iso3": "IDN",
-    "phoneCode": "62"
+    "prefijo": "62"
   },
   {
-    "nameES": "Irán",
+    "pais": "Irán",
     "nameEN": "Iran",
-    "iso2": "IR",
+    "pronombre": "IR",
     "iso3": "IRN",
-    "phoneCode": "98"
+    "prefijo": "98"
   },
   {
-    "nameES": "Irak",
+    "pais": "Irak",
     "nameEN": "Iraq",
-    "iso2": "IQ",
+    "pronombre": "IQ",
     "iso3": "IRQ",
-    "phoneCode": "964"
+    "prefijo": "964"
   },
   {
-    "nameES": "Irlanda",
+    "pais": "Irlanda",
     "nameEN": "Ireland",
-    "iso2": "IE",
+    "pronombre": "IE",
     "iso3": "IRL",
-    "phoneCode": "353"
+    "prefijo": "353"
   },
   {
-    "nameES": "Isla Bouvet",
+    "pais": "Isla Bouvet",
     "nameEN": "Bouvet Island",
-    "iso2": "BV",
+    "pronombre": "BV",
     "iso3": "BVT",
-    "phoneCode": ""
+    "prefijo": ""
   },
   {
-    "nameES": "Isla de Man",
+    "pais": "Isla de Man",
     "nameEN": "Isle of Man",
-    "iso2": "IM",
+    "pronombre": "IM",
     "iso3": "IMN",
-    "phoneCode": "44"
+    "prefijo": "44"
   },
   {
-    "nameES": "Isla de Navidad",
+    "pais": "Isla de Navidad",
     "nameEN": "Christmas Island",
-    "iso2": "CX",
+    "pronombre": "CX",
     "iso3": "CXR",
-    "phoneCode": "61"
+    "prefijo": "61"
   },
   {
-    "nameES": "Isla Norfolk",
+    "pais": "Isla Norfolk",
     "nameEN": "Norfolk Island",
-    "iso2": "NF",
+    "pronombre": "NF",
     "iso3": "NFK",
-    "phoneCode": "672"
+    "prefijo": "672"
   },
   {
-    "nameES": "Islandia",
+    "pais": "Islandia",
     "nameEN": "Iceland",
-    "iso2": "IS",
+    "pronombre": "IS",
     "iso3": "ISL",
-    "phoneCode": "354"
+    "prefijo": "354"
   },
   {
-    "nameES": "Islas Bermudas",
+    "pais": "Islas Bermudas",
     "nameEN": "Bermuda Islands",
-    "iso2": "BM",
+    "pronombre": "BM",
     "iso3": "BMU",
-    "phoneCode": "1 441"
+    "prefijo": "1 441"
   },
   {
-    "nameES": "Islas Caimán",
+    "pais": "Islas Caimán",
     "nameEN": "Cayman Islands",
-    "iso2": "KY",
+    "pronombre": "KY",
     "iso3": "CYM",
-    "phoneCode": "1 345"
+    "prefijo": "1 345"
   },
   {
-    "nameES": "Islas Cocos (Keeling)",
+    "pais": "Islas Cocos (Keeling)",
     "nameEN": "Cocos (Keeling) Islands",
-    "iso2": "CC",
+    "pronombre": "CC",
     "iso3": "CCK",
-    "phoneCode": "61"
+    "prefijo": "61"
   },
   {
-    "nameES": "Islas Cook",
+    "pais": "Islas Cook",
     "nameEN": "Cook Islands",
-    "iso2": "CK",
+    "pronombre": "CK",
     "iso3": "COK",
-    "phoneCode": "682"
+    "prefijo": "682"
   },
   {
-    "nameES": "Islas de Åland",
+    "pais": "Islas de Åland",
     "nameEN": "Åland Islands",
-    "iso2": "AX",
+    "pronombre": "AX",
     "iso3": "ALA",
-    "phoneCode": "358"
+    "prefijo": "358"
   },
   {
-    "nameES": "Islas Feroe",
+    "pais": "Islas Feroe",
     "nameEN": "Faroe Islands",
-    "iso2": "FO",
+    "pronombre": "FO",
     "iso3": "FRO",
-    "phoneCode": "298"
+    "prefijo": "298"
   },
   {
-    "nameES": "Islas Georgias del Sur y Sandwich del Sur",
+    "pais": "Islas Georgias del Sur y Sandwich del Sur",
     "nameEN": "South Georgia and the South Sandwich Islands",
-    "iso2": "GS",
+    "pronombre": "GS",
     "iso3": "SGS",
-    "phoneCode": "500"
+    "prefijo": "500"
   },
   {
-    "nameES": "Islas Heard y McDonald",
+    "pais": "Islas Heard y McDonald",
     "nameEN": "Heard Island and McDonald Islands",
-    "iso2": "HM",
+    "pronombre": "HM",
     "iso3": "HMD",
-    "phoneCode": ""
+    "prefijo": ""
   },
   {
-    "nameES": "Islas Maldivas",
+    "pais": "Islas Maldivas",
     "nameEN": "Maldives",
-    "iso2": "MV",
+    "pronombre": "MV",
     "iso3": "MDV",
-    "phoneCode": "960"
+    "prefijo": "960"
   },
   {
-    "nameES": "Islas Malvinas",
+    "pais": "Islas Malvinas",
     "nameEN": "Falkland Islands (Malvinas)",
-    "iso2": "FK",
+    "pronombre": "FK",
     "iso3": "FLK",
-    "phoneCode": "500"
+    "prefijo": "500"
   },
   {
-    "nameES": "Islas Marianas del Norte",
+    "pais": "Islas Marianas del Norte",
     "nameEN": "Northern Mariana Islands",
-    "iso2": "MP",
+    "pronombre": "MP",
     "iso3": "MNP",
-    "phoneCode": "1 670"
+    "prefijo": "1 670"
   },
   {
-    "nameES": "Islas Marshall",
+    "pais": "Islas Marshall",
     "nameEN": "Marshall Islands",
-    "iso2": "MH",
+    "pronombre": "MH",
     "iso3": "MHL",
-    "phoneCode": "692"
+    "prefijo": "692"
   },
   {
-    "nameES": "Islas Pitcairn",
+    "pais": "Islas Pitcairn",
     "nameEN": "Pitcairn Islands",
-    "iso2": "PN",
+    "pronombre": "PN",
     "iso3": "PCN",
-    "phoneCode": "870"
+    "prefijo": "870"
   },
   {
-    "nameES": "Islas Salomón",
+    "pais": "Islas Salomón",
     "nameEN": "Solomon Islands",
-    "iso2": "SB",
+    "pronombre": "SB",
     "iso3": "SLB",
-    "phoneCode": "677"
+    "prefijo": "677"
   },
   {
-    "nameES": "Islas Turcas y Caicos",
+    "pais": "Islas Turcas y Caicos",
     "nameEN": "Turks and Caicos Islands",
-    "iso2": "TC",
+    "pronombre": "TC",
     "iso3": "TCA",
-    "phoneCode": "1 649"
+    "prefijo": "1 649"
   },
   {
-    "nameES": "Islas Ultramarinas Menores de Estados Unidos",
+    "pais": "Islas Ultramarinas Menores de Estados Unidos",
     "nameEN": "United States Minor Outlying Islands",
-    "iso2": "UM",
+    "pronombre": "UM",
     "iso3": "UMI",
-    "phoneCode": "246"
+    "prefijo": "246"
   },
   {
-    "nameES": "Islas Vírgenes Británicas",
+    "pais": "Islas Vírgenes Británicas",
     "nameEN": "Virgin Islands",
-    "iso2": "VG",
+    "pronombre": "VG",
     "iso3": "VGB",
-    "phoneCode": "1 284"
+    "prefijo": "1 284"
   },
   {
-    "nameES": "Islas Vírgenes de los Estados Unidos",
+    "pais": "Islas Vírgenes de los Estados Unidos",
     "nameEN": "United States Virgin Islands",
-    "iso2": "VI",
+    "pronombre": "VI",
     "iso3": "VIR",
-    "phoneCode": "1 340"
+    "prefijo": "1 340"
   },
   {
-    "nameES": "Israel",
+    "pais": "Israel",
     "nameEN": "Israel",
-    "iso2": "IL",
+    "pronombre": "IL",
     "iso3": "ISR",
-    "phoneCode": "972"
+    "prefijo": "972"
   },
   {
-    "nameES": "Italia",
+    "pais": "Italia",
     "nameEN": "Italy",
-    "iso2": "IT",
+    "pronombre": "IT",
     "iso3": "ITA",
-    "phoneCode": "39"
+    "prefijo": "39"
   },
   {
-    "nameES": "Jamaica",
+    "pais": "Jamaica",
     "nameEN": "Jamaica",
-    "iso2": "JM",
+    "pronombre": "JM",
     "iso3": "JAM",
-    "phoneCode": "1 876"
+    "prefijo": "1 876"
   },
   {
-    "nameES": "Japón",
+    "pais": "Japón",
     "nameEN": "Japan",
-    "iso2": "JP",
+    "pronombre": "JP",
     "iso3": "JPN",
-    "phoneCode": "81"
+    "prefijo": "81"
   },
   {
-    "nameES": "Jersey",
+    "pais": "Jersey",
     "nameEN": "Jersey",
-    "iso2": "JE",
+    "pronombre": "JE",
     "iso3": "JEY",
-    "phoneCode": "44"
+    "prefijo": "44"
   },
   {
-    "nameES": "Jordania",
+    "pais": "Jordania",
     "nameEN": "Jordan",
-    "iso2": "JO",
+    "pronombre": "JO",
     "iso3": "JOR",
-    "phoneCode": "962"
+    "prefijo": "962"
   },
   {
-    "nameES": "Kazajistán",
+    "pais": "Kazajistán",
     "nameEN": "Kazakhstan",
-    "iso2": "KZ",
+    "pronombre": "KZ",
     "iso3": "KAZ",
-    "phoneCode": "7"
+    "prefijo": "7"
   },
   {
-    "nameES": "Kenia",
+    "pais": "Kenia",
     "nameEN": "Kenya",
-    "iso2": "KE",
+    "pronombre": "KE",
     "iso3": "KEN",
-    "phoneCode": "254"
+    "prefijo": "254"
   },
   {
-    "nameES": "Kirguistán",
+    "pais": "Kirguistán",
     "nameEN": "Kyrgyzstan",
-    "iso2": "KG",
+    "pronombre": "KG",
     "iso3": "KGZ",
-    "phoneCode": "996"
+    "prefijo": "996"
   },
   {
-    "nameES": "Kiribati",
+    "pais": "Kiribati",
     "nameEN": "Kiribati",
-    "iso2": "KI",
+    "pronombre": "KI",
     "iso3": "KIR",
-    "phoneCode": "686"
+    "prefijo": "686"
   },
   {
-    "nameES": "Kuwait",
+    "pais": "Kuwait",
     "nameEN": "Kuwait",
-    "iso2": "KW",
+    "pronombre": "KW",
     "iso3": "KWT",
-    "phoneCode": "965"
+    "prefijo": "965"
   },
   {
-    "nameES": "Líbano",
+    "pais": "Líbano",
     "nameEN": "Lebanon",
-    "iso2": "LB",
+    "pronombre": "LB",
     "iso3": "LBN",
-    "phoneCode": "961"
+    "prefijo": "961"
   },
   {
-    "nameES": "Laos",
+    "pais": "Laos",
     "nameEN": "Laos",
-    "iso2": "LA",
+    "pronombre": "LA",
     "iso3": "LAO",
-    "phoneCode": "856"
+    "prefijo": "856"
   },
   {
-    "nameES": "Lesoto",
+    "pais": "Lesoto",
     "nameEN": "Lesotho",
-    "iso2": "LS",
+    "pronombre": "LS",
     "iso3": "LSO",
-    "phoneCode": "266"
+    "prefijo": "266"
   },
   {
-    "nameES": "Letonia",
+    "pais": "Letonia",
     "nameEN": "Latvia",
-    "iso2": "LV",
+    "pronombre": "LV",
     "iso3": "LVA",
-    "phoneCode": "371"
+    "prefijo": "371"
   },
   {
-    "nameES": "Liberia",
+    "pais": "Liberia",
     "nameEN": "Liberia",
-    "iso2": "LR",
+    "pronombre": "LR",
     "iso3": "LBR",
-    "phoneCode": "231"
+    "prefijo": "231"
   },
   {
-    "nameES": "Libia",
+    "pais": "Libia",
     "nameEN": "Libya",
-    "iso2": "LY",
+    "pronombre": "LY",
     "iso3": "LBY",
-    "phoneCode": "218"
+    "prefijo": "218"
   },
   {
-    "nameES": "Liechtenstein",
+    "pais": "Liechtenstein",
     "nameEN": "Liechtenstein",
-    "iso2": "LI",
+    "pronombre": "LI",
     "iso3": "LIE",
-    "phoneCode": "423"
+    "prefijo": "423"
   },
   {
-    "nameES": "Lituania",
+    "pais": "Lituania",
     "nameEN": "Lithuania",
-    "iso2": "LT",
+    "pronombre": "LT",
     "iso3": "LTU",
-    "phoneCode": "370"
+    "prefijo": "370"
   },
   {
-    "nameES": "Luxemburgo",
+    "pais": "Luxemburgo",
     "nameEN": "Luxembourg",
-    "iso2": "LU",
+    "pronombre": "LU",
     "iso3": "LUX",
-    "phoneCode": "352"
+    "prefijo": "352"
   },
   {
-    "nameES": "México",
+    "pais": "México",
     "nameEN": "Mexico",
-    "iso2": "MX",
+    "pronombre": "MX",
     "iso3": "MEX",
-    "phoneCode": "52"
+    "prefijo": "52"
   },
   {
-    "nameES": "Mónaco",
+    "pais": "Mónaco",
     "nameEN": "Monaco",
-    "iso2": "MC",
+    "pronombre": "MC",
     "iso3": "MCO",
-    "phoneCode": "377"
+    "prefijo": "377"
   },
   {
-    "nameES": "Macao",
+    "pais": "Macao",
     "nameEN": "Macao",
-    "iso2": "MO",
+    "pronombre": "MO",
     "iso3": "MAC",
-    "phoneCode": "853"
+    "prefijo": "853"
   },
   {
-    "nameES": "Macedônia",
+    "pais": "Macedônia",
     "nameEN": "Macedonia",
-    "iso2": "MK",
+    "pronombre": "MK",
     "iso3": "MKD",
-    "phoneCode": "389"
+    "prefijo": "389"
   },
   {
-    "nameES": "Madagascar",
+    "pais": "Madagascar",
     "nameEN": "Madagascar",
-    "iso2": "MG",
+    "pronombre": "MG",
     "iso3": "MDG",
-    "phoneCode": "261"
+    "prefijo": "261"
   },
   {
-    "nameES": "Malasia",
+    "pais": "Malasia",
     "nameEN": "Malaysia",
-    "iso2": "MY",
+    "pronombre": "MY",
     "iso3": "MYS",
-    "phoneCode": "60"
+    "prefijo": "60"
   },
   {
-    "nameES": "Malawi",
+    "pais": "Malawi",
     "nameEN": "Malawi",
-    "iso2": "MW",
+    "pronombre": "MW",
     "iso3": "MWI",
-    "phoneCode": "265"
+    "prefijo": "265"
   },
   {
-    "nameES": "Mali",
+    "pais": "Mali",
     "nameEN": "Mali",
-    "iso2": "ML",
+    "pronombre": "ML",
     "iso3": "MLI",
-    "phoneCode": "223"
+    "prefijo": "223"
   },
   {
-    "nameES": "Malta",
+    "pais": "Malta",
     "nameEN": "Malta",
-    "iso2": "MT",
+    "pronombre": "MT",
     "iso3": "MLT",
-    "phoneCode": "356"
+    "prefijo": "356"
   },
   {
-    "nameES": "Marruecos",
+    "pais": "Marruecos",
     "nameEN": "Morocco",
-    "iso2": "MA",
+    "pronombre": "MA",
     "iso3": "MAR",
-    "phoneCode": "212"
+    "prefijo": "212"
   },
   {
-    "nameES": "Martinica",
+    "pais": "Martinica",
     "nameEN": "Martinique",
-    "iso2": "MQ",
+    "pronombre": "MQ",
     "iso3": "MTQ",
-    "phoneCode": "596"
+    "prefijo": "596"
   },
   {
-    "nameES": "Mauricio",
+    "pais": "Mauricio",
     "nameEN": "Mauritius",
-    "iso2": "MU",
+    "pronombre": "MU",
     "iso3": "MUS",
-    "phoneCode": "230"
+    "prefijo": "230"
   },
   {
-    "nameES": "Mauritania",
+    "pais": "Mauritania",
     "nameEN": "Mauritania",
-    "iso2": "MR",
+    "pronombre": "MR",
     "iso3": "MRT",
-    "phoneCode": "222"
+    "prefijo": "222"
   },
   {
-    "nameES": "Mayotte",
+    "pais": "Mayotte",
     "nameEN": "Mayotte",
-    "iso2": "YT",
+    "pronombre": "YT",
     "iso3": "MYT",
-    "phoneCode": "262"
+    "prefijo": "262"
   },
   {
-    "nameES": "Micronesia",
+    "pais": "Micronesia",
     "nameEN": "Estados Federados de",
-    "iso2": "FM",
+    "pronombre": "FM",
     "iso3": "FSM",
-    "phoneCode": "691"
+    "prefijo": "691"
   },
   {
-    "nameES": "Moldavia",
+    "pais": "Moldavia",
     "nameEN": "Moldova",
-    "iso2": "MD",
+    "pronombre": "MD",
     "iso3": "MDA",
-    "phoneCode": "373"
+    "prefijo": "373"
   },
   {
-    "nameES": "Mongolia",
+    "pais": "Mongolia",
     "nameEN": "Mongolia",
-    "iso2": "MN",
+    "pronombre": "MN",
     "iso3": "MNG",
-    "phoneCode": "976"
+    "prefijo": "976"
   },
   {
-    "nameES": "Montenegro",
+    "pais": "Montenegro",
     "nameEN": "Montenegro",
-    "iso2": "ME",
+    "pronombre": "ME",
     "iso3": "MNE",
-    "phoneCode": "382"
+    "prefijo": "382"
   },
   {
-    "nameES": "Montserrat",
+    "pais": "Montserrat",
     "nameEN": "Montserrat",
-    "iso2": "MS",
+    "pronombre": "MS",
     "iso3": "MSR",
-    "phoneCode": "1 664"
+    "prefijo": "1 664"
   },
   {
-    "nameES": "Mozambique",
+    "pais": "Mozambique",
     "nameEN": "Mozambique",
-    "iso2": "MZ",
+    "pronombre": "MZ",
     "iso3": "MOZ",
-    "phoneCode": "258"
+    "prefijo": "258"
   },
   {
-    "nameES": "Namibia",
+    "pais": "Namibia",
     "nameEN": "Namibia",
-    "iso2": "NA",
+    "pronombre": "NA",
     "iso3": "NAM",
-    "phoneCode": "264"
+    "prefijo": "264"
   },
   {
-    "nameES": "Nauru",
+    "pais": "Nauru",
     "nameEN": "Nauru",
-    "iso2": "NR",
+    "pronombre": "NR",
     "iso3": "NRU",
-    "phoneCode": "674"
+    "prefijo": "674"
   },
   {
-    "nameES": "Nepal",
+    "pais": "Nepal",
     "nameEN": "Nepal",
-    "iso2": "NP",
+    "pronombre": "NP",
     "iso3": "NPL",
-    "phoneCode": "977"
+    "prefijo": "977"
   },
   {
-    "nameES": "Nicaragua",
+    "pais": "Nicaragua",
     "nameEN": "Nicaragua",
-    "iso2": "NI",
+    "pronombre": "NI",
     "iso3": "NIC",
-    "phoneCode": "505"
+    "prefijo": "505"
   },
   {
-    "nameES": "Niger",
+    "pais": "Niger",
     "nameEN": "Niger",
-    "iso2": "NE",
+    "pronombre": "NE",
     "iso3": "NER",
-    "phoneCode": "227"
+    "prefijo": "227"
   },
   {
-    "nameES": "Nigeria",
+    "pais": "Nigeria",
     "nameEN": "Nigeria",
-    "iso2": "NG",
+    "pronombre": "NG",
     "iso3": "NGA",
-    "phoneCode": "234"
+    "prefijo": "234"
   },
   {
-    "nameES": "Niue",
+    "pais": "Niue",
     "nameEN": "Niue",
-    "iso2": "NU",
+    "pronombre": "NU",
     "iso3": "NIU",
-    "phoneCode": "683"
+    "prefijo": "683"
   },
   {
-    "nameES": "Noruega",
+    "pais": "Noruega",
     "nameEN": "Norway",
-    "iso2": "NO",
+    "pronombre": "NO",
     "iso3": "NOR",
-    "phoneCode": "47"
+    "prefijo": "47"
   },
   {
-    "nameES": "Nueva Caledonia",
+    "pais": "Nueva Caledonia",
     "nameEN": "New Caledonia",
-    "iso2": "NC",
+    "pronombre": "NC",
     "iso3": "NCL",
-    "phoneCode": "687"
+    "prefijo": "687"
   },
   {
-    "nameES": "Nueva Zelanda",
+    "pais": "Nueva Zelanda",
     "nameEN": "New Zealand",
-    "iso2": "NZ",
+    "pronombre": "NZ",
     "iso3": "NZL",
-    "phoneCode": "64"
+    "prefijo": "64"
   },
   {
-    "nameES": "Omán",
+    "pais": "Omán",
     "nameEN": "Oman",
-    "iso2": "OM",
+    "pronombre": "OM",
     "iso3": "OMN",
-    "phoneCode": "968"
+    "prefijo": "968"
   },
   {
-    "nameES": "Países Bajos",
+    "pais": "Países Bajos",
     "nameEN": "Netherlands",
-    "iso2": "NL",
+    "pronombre": "NL",
     "iso3": "NLD",
-    "phoneCode": "31"
+    "prefijo": "31"
   },
   {
-    "nameES": "Pakistán",
+    "pais": "Pakistán",
     "nameEN": "Pakistan",
-    "iso2": "PK",
+    "pronombre": "PK",
     "iso3": "PAK",
-    "phoneCode": "92"
+    "prefijo": "92"
   },
   {
-    "nameES": "Palau",
+    "pais": "Palau",
     "nameEN": "Palau",
-    "iso2": "PW",
+    "pronombre": "PW",
     "iso3": "PLW",
-    "phoneCode": "680"
+    "prefijo": "680"
   },
   {
-    "nameES": "Palestina",
+    "pais": "Palestina",
     "nameEN": "Palestine",
-    "iso2": "PS",
+    "pronombre": "PS",
     "iso3": "PSE",
-    "phoneCode": "970"
+    "prefijo": "970"
   },
   {
-    "nameES": "Panamá",
+    "pais": "Panamá",
     "nameEN": "Panama",
-    "iso2": "PA",
+    "pronombre": "PA",
     "iso3": "PAN",
-    "phoneCode": "507"
+    "prefijo": "507"
   },
   {
-    "nameES": "Papúa Nueva Guinea",
+    "pais": "Papúa Nueva Guinea",
     "nameEN": "Papua New Guinea",
-    "iso2": "PG",
+    "pronombre": "PG",
     "iso3": "PNG",
-    "phoneCode": "675"
+    "prefijo": "675"
   },
   {
-    "nameES": "Paraguay",
+    "pais": "Paraguay",
     "nameEN": "Paraguay",
-    "iso2": "PY",
+    "pronombre": "PY",
     "iso3": "PRY",
-    "phoneCode": "595"
+    "prefijo": "595"
   },
   {
-    "nameES": "Perú",
+    "pais": "Perú",
     "nameEN": "Peru",
-    "iso2": "PE",
+    "pronombre": "PE",
     "iso3": "PER",
-    "phoneCode": "51"
+    "prefijo": "51"
   },
   {
-    "nameES": "Polinesia Francesa",
+    "pais": "Polinesia Francesa",
     "nameEN": "French Polynesia",
-    "iso2": "PF",
+    "pronombre": "PF",
     "iso3": "PYF",
-    "phoneCode": "689"
+    "prefijo": "689"
   },
   {
-    "nameES": "Polonia",
+    "pais": "Polonia",
     "nameEN": "Poland",
-    "iso2": "PL",
+    "pronombre": "PL",
     "iso3": "POL",
-    "phoneCode": "48"
+    "prefijo": "48"
   },
   {
-    "nameES": "Portugal",
+    "pais": "Portugal",
     "nameEN": "Portugal",
-    "iso2": "PT",
+    "pronombre": "PT",
     "iso3": "PRT",
-    "phoneCode": "351"
+    "prefijo": "351"
   },
   {
-    "nameES": "Puerto Rico",
+    "pais": "Puerto Rico",
     "nameEN": "Puerto Rico",
-    "iso2": "PR",
+    "pronombre": "PR",
     "iso3": "PRI",
-    "phoneCode": "1"
+    "prefijo": "1"
   },
   {
-    "nameES": "Qatar",
+    "pais": "Qatar",
     "nameEN": "Qatar",
-    "iso2": "QA",
+    "pronombre": "QA",
     "iso3": "QAT",
-    "phoneCode": "974"
+    "prefijo": "974"
   },
   {
-    "nameES": "Reino Unido",
+    "pais": "Reino Unido",
     "nameEN": "United Kingdom",
-    "iso2": "GB",
+    "pronombre": "GB",
     "iso3": "GBR",
-    "phoneCode": "44"
+    "prefijo": "44"
   },
   {
-    "nameES": "República Centroafricana",
+    "pais": "República Centroafricana",
     "nameEN": "Central African Republic",
-    "iso2": "CF",
+    "pronombre": "CF",
     "iso3": "CAF",
-    "phoneCode": "236"
+    "prefijo": "236"
   },
   {
-    "nameES": "República Checa",
+    "pais": "República Checa",
     "nameEN": "Czech Republic",
-    "iso2": "CZ",
+    "pronombre": "CZ",
     "iso3": "CZE",
-    "phoneCode": "420"
+    "prefijo": "420"
   },
   {
-    "nameES": "República Dominicana",
+    "pais": "República Dominicana",
     "nameEN": "Dominican Republic",
-    "iso2": "DO",
+    "pronombre": "DO",
     "iso3": "DOM",
-    "phoneCode": "1 809"
+    "prefijo": "1 809"
   },
   {
-    "nameES": "República de Sudán del Sur",
+    "pais": "República de Sudán del Sur",
     "nameEN": "South Sudan",
-    "iso2": "SS",
+    "pronombre": "SS",
     "iso3": "SSD",
-    "phoneCode": "211"
+    "prefijo": "211"
   },
   {
-    "nameES": "Reunión",
+    "pais": "Reunión",
     "nameEN": "Réunion",
-    "iso2": "RE",
+    "pronombre": "RE",
     "iso3": "REU",
-    "phoneCode": "262"
+    "prefijo": "262"
   },
   {
-    "nameES": "Ruanda",
+    "pais": "Ruanda",
     "nameEN": "Rwanda",
-    "iso2": "RW",
+    "pronombre": "RW",
     "iso3": "RWA",
-    "phoneCode": "250"
+    "prefijo": "250"
   },
   {
-    "nameES": "Rumanía",
+    "pais": "Rumanía",
     "nameEN": "Romania",
-    "iso2": "RO",
+    "pronombre": "RO",
     "iso3": "ROU",
-    "phoneCode": "40"
+    "prefijo": "40"
   },
   {
-    "nameES": "Rusia",
+    "pais": "Rusia",
     "nameEN": "Russia",
-    "iso2": "RU",
+    "pronombre": "RU",
     "iso3": "RUS",
-    "phoneCode": "7"
+    "prefijo": "7"
   },
   {
-    "nameES": "Sahara Occidental",
+    "pais": "Sahara Occidental",
     "nameEN": "Western Sahara",
-    "iso2": "EH",
+    "pronombre": "EH",
     "iso3": "ESH",
-    "phoneCode": "212"
+    "prefijo": "212"
   },
   {
-    "nameES": "Samoa",
+    "pais": "Samoa",
     "nameEN": "Samoa",
-    "iso2": "WS",
+    "pronombre": "WS",
     "iso3": "WSM",
-    "phoneCode": "685"
+    "prefijo": "685"
   },
   {
-    "nameES": "Samoa Americana",
+    "pais": "Samoa Americana",
     "nameEN": "American Samoa",
-    "iso2": "AS",
+    "pronombre": "AS",
     "iso3": "ASM",
-    "phoneCode": "1 684"
+    "prefijo": "1 684"
   },
   {
-    "nameES": "San Bartolomé",
+    "pais": "San Bartolomé",
     "nameEN": "Saint Barthélemy",
-    "iso2": "BL",
+    "pronombre": "BL",
     "iso3": "BLM",
-    "phoneCode": "590"
+    "prefijo": "590"
   },
   {
-    "nameES": "San Cristóbal y Nieves",
+    "pais": "San Cristóbal y Nieves",
     "nameEN": "Saint Kitts and Nevis",
-    "iso2": "KN",
+    "pronombre": "KN",
     "iso3": "KNA",
-    "phoneCode": "1 869"
+    "prefijo": "1 869"
   },
   {
-    "nameES": "San Marino",
+    "pais": "San Marino",
     "nameEN": "San Marino",
-    "iso2": "SM",
+    "pronombre": "SM",
     "iso3": "SMR",
-    "phoneCode": "378"
+    "prefijo": "378"
   },
   {
-    "nameES": "San Martín (Francia)",
+    "pais": "San Martín (Francia)",
     "nameEN": "Saint Martin (French part)",
-    "iso2": "MF",
+    "pronombre": "MF",
     "iso3": "MAF",
-    "phoneCode": "1 599"
+    "prefijo": "1 599"
   },
   {
-    "nameES": "San Pedro y Miquelón",
+    "pais": "San Pedro y Miquelón",
     "nameEN": "Saint Pierre and Miquelon",
-    "iso2": "PM",
+    "pronombre": "PM",
     "iso3": "SPM",
-    "phoneCode": "508"
+    "prefijo": "508"
   },
   {
-    "nameES": "San Vicente y las Granadinas",
+    "pais": "San Vicente y las Granadinas",
     "nameEN": "Saint Vincent and the Grenadines",
-    "iso2": "VC",
+    "pronombre": "VC",
     "iso3": "VCT",
-    "phoneCode": "1 784"
+    "prefijo": "1 784"
   },
   {
-    "nameES": "Santa Elena",
+    "pais": "Santa Elena",
     "nameEN": "Ascensión y Tristán de Acuña",
-    "iso2": "SH",
+    "pronombre": "SH",
     "iso3": "SHN",
-    "phoneCode": "290"
+    "prefijo": "290"
   },
   {
-    "nameES": "Santa Lucía",
+    "pais": "Santa Lucía",
     "nameEN": "Saint Lucia",
-    "iso2": "LC",
+    "pronombre": "LC",
     "iso3": "LCA",
-    "phoneCode": "1 758"
+    "prefijo": "1 758"
   },
   {
-    "nameES": "Santo Tomé y Príncipe",
+    "pais": "Santo Tomé y Príncipe",
     "nameEN": "Sao Tome and Principe",
-    "iso2": "ST",
+    "pronombre": "ST",
     "iso3": "STP",
-    "phoneCode": "239"
+    "prefijo": "239"
   },
   {
-    "nameES": "Senegal",
+    "pais": "Senegal",
     "nameEN": "Senegal",
-    "iso2": "SN",
+    "pronombre": "SN",
     "iso3": "SEN",
-    "phoneCode": "221"
+    "prefijo": "221"
   },
   {
-    "nameES": "Serbia",
+    "pais": "Serbia",
     "nameEN": "Serbia",
-    "iso2": "RS",
+    "pronombre": "RS",
     "iso3": "SRB",
-    "phoneCode": "381"
+    "prefijo": "381"
   },
   {
-    "nameES": "Seychelles",
+    "pais": "Seychelles",
     "nameEN": "Seychelles",
-    "iso2": "SC",
+    "pronombre": "SC",
     "iso3": "SYC",
-    "phoneCode": "248"
+    "prefijo": "248"
   },
   {
-    "nameES": "Sierra Leona",
+    "pais": "Sierra Leona",
     "nameEN": "Sierra Leone",
-    "iso2": "SL",
+    "pronombre": "SL",
     "iso3": "SLE",
-    "phoneCode": "232"
+    "prefijo": "232"
   },
   {
-    "nameES": "Singapur",
+    "pais": "Singapur",
     "nameEN": "Singapore",
-    "iso2": "SG",
+    "pronombre": "SG",
     "iso3": "SGP",
-    "phoneCode": "65"
+    "prefijo": "65"
   },
   {
-    "nameES": "Sint Maarten",
+    "pais": "Sint Maarten",
     "nameEN": "Sint Maarten",
-    "iso2": "SX",
+    "pronombre": "SX",
     "iso3": "SMX",
-    "phoneCode": "1 721"
+    "prefijo": "1 721"
   },
   {
-    "nameES": "Siria",
+    "pais": "Siria",
     "nameEN": "Syria",
-    "iso2": "SY",
+    "pronombre": "SY",
     "iso3": "SYR",
-    "phoneCode": "963"
+    "prefijo": "963"
   },
   {
-    "nameES": "Somalia",
+    "pais": "Somalia",
     "nameEN": "Somalia",
-    "iso2": "SO",
+    "pronombre": "SO",
     "iso3": "SOM",
-    "phoneCode": "252"
+    "prefijo": "252"
   },
   {
-    "nameES": "Sri lanka",
+    "pais": "Sri lanka",
     "nameEN": "Sri Lanka",
-    "iso2": "LK",
+    "pronombre": "LK",
     "iso3": "LKA",
-    "phoneCode": "94"
+    "prefijo": "94"
   },
   {
-    "nameES": "Sudáfrica",
+    "pais": "Sudáfrica",
     "nameEN": "South Africa",
-    "iso2": "ZA",
+    "pronombre": "ZA",
     "iso3": "ZAF",
-    "phoneCode": "27"
+    "prefijo": "27"
   },
   {
-    "nameES": "Sudán",
+    "pais": "Sudán",
     "nameEN": "Sudan",
-    "iso2": "SD",
+    "pronombre": "SD",
     "iso3": "SDN",
-    "phoneCode": "249"
+    "prefijo": "249"
   },
   {
-    "nameES": "Suecia",
+    "pais": "Suecia",
     "nameEN": "Sweden",
-    "iso2": "SE",
+    "pronombre": "SE",
     "iso3": "SWE",
-    "phoneCode": "46"
+    "prefijo": "46"
   },
   {
-    "nameES": "Suiza",
+    "pais": "Suiza",
     "nameEN": "Switzerland",
-    "iso2": "CH",
+    "pronombre": "CH",
     "iso3": "CHE",
-    "phoneCode": "41"
+    "prefijo": "41"
   },
   {
-    "nameES": "Surinám",
+    "pais": "Surinám",
     "nameEN": "Suriname",
-    "iso2": "SR",
+    "pronombre": "SR",
     "iso3": "SUR",
-    "phoneCode": "597"
+    "prefijo": "597"
   },
   {
-    "nameES": "Svalbard y Jan Mayen",
+    "pais": "Svalbard y Jan Mayen",
     "nameEN": "Svalbard and Jan Mayen",
-    "iso2": "SJ",
+    "pronombre": "SJ",
     "iso3": "SJM",
-    "phoneCode": "47"
+    "prefijo": "47"
   },
   {
-    "nameES": "Swazilandia",
+    "pais": "Swazilandia",
     "nameEN": "Swaziland",
-    "iso2": "SZ",
+    "pronombre": "SZ",
     "iso3": "SWZ",
-    "phoneCode": "268"
+    "prefijo": "268"
   },
   {
-    "nameES": "Tayikistán",
+    "pais": "Tayikistán",
     "nameEN": "Tajikistan",
-    "iso2": "TJ",
+    "pronombre": "TJ",
     "iso3": "TJK",
-    "phoneCode": "992"
+    "prefijo": "992"
   },
   {
-    "nameES": "Tailandia",
+    "pais": "Tailandia",
     "nameEN": "Thailand",
-    "iso2": "TH",
+    "pronombre": "TH",
     "iso3": "THA",
-    "phoneCode": "66"
+    "prefijo": "66"
   },
   {
-    "nameES": "Taiwán",
+    "pais": "Taiwán",
     "nameEN": "Taiwan",
-    "iso2": "TW",
+    "pronombre": "TW",
     "iso3": "TWN",
-    "phoneCode": "886"
+    "prefijo": "886"
   },
   {
-    "nameES": "Tanzania",
+    "pais": "Tanzania",
     "nameEN": "Tanzania",
-    "iso2": "TZ",
+    "pronombre": "TZ",
     "iso3": "TZA",
-    "phoneCode": "255"
+    "prefijo": "255"
   },
   {
-    "nameES": "Territorio Británico del Océano Índico",
+    "pais": "Territorio Británico del Océano Índico",
     "nameEN": "British Indian Ocean Territory",
-    "iso2": "IO",
+    "pronombre": "IO",
     "iso3": "IOT",
-    "phoneCode": "246"
+    "prefijo": "246"
   },
   {
-    "nameES": "Territorios Australes y Antárticas Franceses",
+    "pais": "Territorios Australes y Antárticas Franceses",
     "nameEN": "French Southern Territories",
-    "iso2": "TF",
+    "pronombre": "TF",
     "iso3": "ATF",
-    "phoneCode": ""
+    "prefijo": ""
   },
   {
-    "nameES": "Timor Oriental",
+    "pais": "Timor Oriental",
     "nameEN": "East Timor",
-    "iso2": "TL",
+    "pronombre": "TL",
     "iso3": "TLS",
-    "phoneCode": "670"
+    "prefijo": "670"
   },
   {
-    "nameES": "Togo",
+    "pais": "Togo",
     "nameEN": "Togo",
-    "iso2": "TG",
+    "pronombre": "TG",
     "iso3": "TGO",
-    "phoneCode": "228"
+    "prefijo": "228"
   },
   {
-    "nameES": "Tokelau",
+    "pais": "Tokelau",
     "nameEN": "Tokelau",
-    "iso2": "TK",
+    "pronombre": "TK",
     "iso3": "TKL",
-    "phoneCode": "690"
+    "prefijo": "690"
   },
   {
-    "nameES": "Tonga",
+    "pais": "Tonga",
     "nameEN": "Tonga",
-    "iso2": "TO",
+    "pronombre": "TO",
     "iso3": "TON",
-    "phoneCode": "676"
+    "prefijo": "676"
   },
   {
-    "nameES": "Trinidad y Tobago",
+    "pais": "Trinidad y Tobago",
     "nameEN": "Trinidad and Tobago",
-    "iso2": "TT",
+    "pronombre": "TT",
     "iso3": "TTO",
-    "phoneCode": "1 868"
+    "prefijo": "1 868"
   },
   {
-    "nameES": "Tunez",
+    "pais": "Tunez",
     "nameEN": "Tunisia",
-    "iso2": "TN",
+    "pronombre": "TN",
     "iso3": "TUN",
-    "phoneCode": "216"
+    "prefijo": "216"
   },
   {
-    "nameES": "Turkmenistán",
+    "pais": "Turkmenistán",
     "nameEN": "Turkmenistan",
-    "iso2": "TM",
+    "pronombre": "TM",
     "iso3": "TKM",
-    "phoneCode": "993"
+    "prefijo": "993"
   },
   {
-    "nameES": "Turquía",
+    "pais": "Turquía",
     "nameEN": "Turkey",
-    "iso2": "TR",
+    "pronombre": "TR",
     "iso3": "TUR",
-    "phoneCode": "90"
+    "prefijo": "90"
   },
   {
-    "nameES": "Tuvalu",
+    "pais": "Tuvalu",
     "nameEN": "Tuvalu",
-    "iso2": "TV",
+    "pronombre": "TV",
     "iso3": "TUV",
-    "phoneCode": "688"
+    "prefijo": "688"
   },
   {
-    "nameES": "Ucrania",
+    "pais": "Ucrania",
     "nameEN": "Ukraine",
-    "iso2": "UA",
+    "pronombre": "UA",
     "iso3": "UKR",
-    "phoneCode": "380"
+    "prefijo": "380"
   },
   {
-    "nameES": "Uganda",
+    "pais": "Uganda",
     "nameEN": "Uganda",
-    "iso2": "UG",
+    "pronombre": "UG",
     "iso3": "UGA",
-    "phoneCode": "256"
+    "prefijo": "256"
   },
   {
-    "nameES": "Uruguay",
+    "pais": "Uruguay",
     "nameEN": "Uruguay",
-    "iso2": "UY",
+    "pronombre": "UY",
     "iso3": "URY",
-    "phoneCode": "598"
+    "prefijo": "598"
   },
   {
-    "nameES": "Uzbekistán",
+    "pais": "Uzbekistán",
     "nameEN": "Uzbekistan",
-    "iso2": "UZ",
+    "pronombre": "UZ",
     "iso3": "UZB",
-    "phoneCode": "998"
+    "prefijo": "998"
   },
   {
-    "nameES": "Vanuatu",
+    "pais": "Vanuatu",
     "nameEN": "Vanuatu",
-    "iso2": "VU",
+    "pronombre": "VU",
     "iso3": "VUT",
-    "phoneCode": "678"
+    "prefijo": "678"
   },
   {
-    "nameES": "Venezuela",
+    "pais": "Venezuela",
     "nameEN": "Venezuela",
-    "iso2": "VE",
+    "pronombre": "VE",
     "iso3": "VEN",
-    "phoneCode": "58"
+    "prefijo": "58"
   },
   {
-    "nameES": "Vietnam",
+    "pais": "Vietnam",
     "nameEN": "Vietnam",
-    "iso2": "VN",
+    "pronombre": "VN",
     "iso3": "VNM",
-    "phoneCode": "84"
+    "prefijo": "84"
   },
   {
-    "nameES": "Wallis y Futuna",
+    "pais": "Wallis y Futuna",
     "nameEN": "Wallis and Futuna",
-    "iso2": "WF",
+    "pronombre": "WF",
     "iso3": "WLF",
-    "phoneCode": "681"
+    "prefijo": "681"
   },
   {
-    "nameES": "Yemen",
+    "pais": "Yemen",
     "nameEN": "Yemen",
-    "iso2": "YE",
+    "pronombre": "YE",
     "iso3": "YEM",
-    "phoneCode": "967"
+    "prefijo": "967"
   },
   {
-    "nameES": "Yibuti",
+    "pais": "Yibuti",
     "nameEN": "Djibouti",
-    "iso2": "DJ",
+    "pronombre": "DJ",
     "iso3": "DJI",
-    "phoneCode": "253"
+    "prefijo": "253"
   },
   {
-    "nameES": "Zambia",
+    "pais": "Zambia",
     "nameEN": "Zambia",
-    "iso2": "ZM",
+    "pronombre": "ZM",
     "iso3": "ZMB",
-    "phoneCode": "260"
+    "prefijo": "260"
   },
   {
-    "nameES": "Zimbabue",
+    "pais": "Zimbabue",
     "nameEN": "Zimbabwe",
-    "iso2": "ZW",
+    "pronombre": "ZW",
     "iso3": "ZWE",
-    "phoneCode": "263"
+    "prefijo": "263"
   }
 ]

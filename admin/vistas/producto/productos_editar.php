@@ -32,8 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($nombre && $precio) {
         $stmt = $pdo->prepare("UPDATE productos SET nombre=?, descripcion=?, precio=?, categoria_id=?, estado_activo=?, stock=? WHERE id=?");
         $stmt->execute([$nombre, $descripcion, $precio, $categoria_id, $estado_activo, $stock, $id]);
-
         // Subir nuevas imágenes (hasta 10)
+
         $stmt = $pdo->prepare("SELECT COUNT(*) FROM imagenes_producto WHERE producto_id = ?");
         $stmt->execute([$id]);
         $total_actual = $stmt->fetchColumn();
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $filename = uniqid('img_') . '.' . $ext;
                     $destino = dirname(__DIR__, 2) . '/uploads/' . $filename;
                     if (move_uploaded_file($tmp, $destino)) {
-                        $ruta = 'uploads/' . $filename;
+                        $ruta = 'perfiles/' . $filename;
                         $stmt = $pdo->prepare("INSERT INTO imagenes_producto (producto_id, ruta) VALUES (?, ?)");
                         $stmt->execute([$id, $ruta]);
                     }

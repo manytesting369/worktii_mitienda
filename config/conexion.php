@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db = 'worktii_mitienda2';
+$db = 'worktii_catalogoSistemas';
 $user = 'admi';
 $pass = 'admi';
 $charset = 'utf8mb4';

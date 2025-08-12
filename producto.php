@@ -118,17 +118,17 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
                 }
                 ?>
 
-                <div class="precios">
+                <!-- <div class="precios">
                     <?php if ($promo && $promo['estado'] === 'activo'): ?>
                         <div class="precio-original">S/. <?= number_format($precioOriginal, 2) ?></div>
                         <div class="precio-promocion">S/. <?= number_format($precioFinal, 2) ?></div>
                     <?php else: ?>
                         <div class="precio-unico">S/. <?= number_format($precioOriginal, 2) ?></div>
                     <?php endif; ?>
-                </div>
-                <div class="stock">
+                </div> -->
+                <!-- <div class="stock">
                     Stock disponible: <?= intval($producto['stock']) ?> unidades
-                </div>
+                </div> -->
 
 
                 <!-- Botón WhatsApp con enlace al producto -->
@@ -136,13 +136,13 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
                     <a class="btn-wsp"
                         href="https://wa.me/<?= htmlspecialchars($whatsapp) ?>?text=<?= $wspTextEnc ?>"
                         target="_blank">
-                        Consultar por WhatsApp
+                        Consultar
                     </a>
                 <?php endif; ?>
 
 
                 <!-- Promo -->
-                <?php if ($promo):
+                <!-- <?php if ($promo):
                     if ($promo['tipo'] === 'porcentaje') {
                         $val = number_format($promo['valor'], 0) . '%';
                     } elseif ($promo['tipo'] === 'fijo') {
@@ -156,7 +156,7 @@ $promo = $promoStmt->fetch(PDO::FETCH_ASSOC);
                         <?= nl2br(htmlspecialchars($promo['descripcion'])) ?>
                         <small>Vigencia: <?= date('d/m/Y', strtotime($promo['fecha_inicio'])) ?> al <?= date('d/m/Y', strtotime($promo['fecha_fin'])) ?></small>
                     </div>
-                <?php endif; ?>
+                <?php endif; ?> -->
             </div>
         </div>
 
